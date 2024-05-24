@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from 'react';
 import { delay, motion } from "framer-motion";
 
 const pathVariants = {
@@ -9,7 +8,7 @@ const pathVariants = {
     animate: {
         pathLength: 1,
         transition: {
-            duration: 2,
+            duration: 1.5,
             ease: "easeInOut",
         },
     },
@@ -18,15 +17,20 @@ const pathVariants = {
 const letterVariants = {
     initial: {
         pathLength: 0,
-        pathOffset: 1,
+        opacity: 0,
     },
     animate: {
         pathLength: 1,
-        pathOffset: 0,
+        opacity: 1,
         transition: {
-            delay: 1,
-            duration: 2,
-            ease: "easeInOut",
+            pathLength: {
+                delay: 1,
+                duration: 2,
+                ease: "easeInOut",
+            },
+            opacity: {
+                delay: 1,
+            },
         },
     },
 }
@@ -44,29 +48,14 @@ const loadingVariants = {
     },
 }
 
-const Loading = ({ color }) => {
-
-    useEffect(() => {
-        // Prevent scrolling when the component mounts
-        document.body.style.overflow = 'hidden';
-    
-        // Set a timeout to allow scrolling after 5 seconds
-        const timer = setTimeout(() => {
-            document.body.style.overflow = 'auto';
-        }, 5000); // 5000 milliseconds = 5 seconds
-    
-        // Clear the timeout when the component unmounts
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);   
+const Loading = ({ color }) => {  
 
     return (
         <motion.div 
             variants={loadingVariants} 
             initial = "initial"
             animate = "animate"
-            className="flex flex-col justify-center items-center w-full h-screen bg-zinc-900"
+            className="flex flex-col justify-center items-center fixed w-full h-screen bg-zinc-900"
         >
             <svg className='w-[200px]' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Loading Icon" clip-path="url(#clip0_8_2)">
