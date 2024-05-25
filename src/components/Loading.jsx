@@ -1,5 +1,5 @@
-import React from "react";
-import { delay, motion } from "framer-motion";
+/* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
 
 const pathVariants = {
     initial: {
@@ -58,7 +58,7 @@ const Loading = ({ color }) => {
             className="flex flex-col justify-center items-center fixed w-full h-screen bg-zinc-900"
         >
             <svg className='w-[200px]' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Loading Icon" clip-path="url(#clip0_8_2)">
+                <g id="Loading Icon" clipPath="url(#clip0_8_2)">
                     <motion.path 
                         id="Hexagon" 
                         d="M8.69873 26.1547L50 2.3094L91.3013 26.1547L91.3013 73.8453L50 97.6906L8.69873 73.8453L8.69873 26.1547Z" 

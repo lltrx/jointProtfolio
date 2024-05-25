@@ -1,5 +1,6 @@
-import React from "react"
-import { delay, motion } from "framer-motion"
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
+import { motion } from "framer-motion"
 
 const lineVariants = {
     initial: {
@@ -103,8 +104,8 @@ const Socials = ({ color }) => {
                 id="Flat" 
                 xmlns="http://www.w3.org/2000/svg"
             >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
                 <g id="SVGRepo_iconCarrier"> 
                     <motion.path 
                         d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"
@@ -179,7 +180,7 @@ const Socials = ({ color }) => {
                 />
             </svg>
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                    viewBox="0 0 192 500" xml:space="preserve">
+                    viewBox="0 0 192 500" xmlSpace="preserve">
                 <g>
                     <motion.path 
                         stroke={color} 

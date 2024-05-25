@@ -1,8 +1,12 @@
 import "./App.css";
 import Loading from "./components/Loading.jsx";
-import Home from "./components/Home.jsx";
+import Home from "./pages/Home.jsx";
+import NavBar from "./components/NavBar.jsx";
 import Socials from "./components/Socials.jsx";
 import { useEffect, useState } from "react";
+import About from "./pages/About.jsx";
+import TimeLine from "./pages/Timeline.jsx";
+import Experiences from "./pages/Experiences.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -25,12 +29,24 @@ function App() {
 
 
     return (
-    <div className="relative bg-zinc-900">
-        <div className="absolute flex flex-col bg-zinc-900 w-full h-fit items-center">
-        <Home />
+    <div className="relative dark:bg-zinc-900">
+        <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center ">
         <Socials color={"#b54400"} />
+        <NavBar />
+        <section id="home" className="snap-center" >
+        <Home />
+        </section>
+        <section id="about" className="snap-center" >
+          <About />
+        </section>
+        <section id="timeline" className="snap-center" >
+          <TimeLine />
+        </section>
+        <section id="experience" className="snap-center" >
+          <Experiences />
+        </section>
         </div>
-        {isLoading && <Loading className='bg-zinc-900 absolute' color={"#b54400"} />}
+        {isLoading && <Loading className='dark:bg-zinc-900 absolute' color={"#b54400"} />}
     </div>
 );
 }
