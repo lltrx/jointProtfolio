@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import "@theme-toggles/react/css/Classic.css"
 import { Classic } from "@theme-toggles/react"
-import { useState } from "react"
 
-export default function ThemeToggle() {
-  const [isToggled, setToggle] = useState(false)
+
+export default function ThemeToggle({ isToggled, setToggle}) {
+
 
   const toggleTheme = () => {
     if (isToggled) {
@@ -17,12 +18,12 @@ export default function ThemeToggle() {
   return (
     <Classic duration={750}
     value={200}
-    color="#f1c40f"
     toggled={isToggled}
     style={{ 
-    color: "#fff",
+    color: isToggled ? "#fff" : "#000000",
     fontSize: "40px",
      }}
+     className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
     onToggle={() => {
       setToggle(!isToggled)
       toggleTheme()

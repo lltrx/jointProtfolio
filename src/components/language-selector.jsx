@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { PiTranslateFill } from "react-icons/pi";
@@ -7,7 +8,7 @@ const languages = [
   { code: "ar", name: "Arabic" }
 ];
 
-export default function LanguageSelector() {
+export default function LanguageSelector({isToggled}) {
   const { i18n } = useTranslation();
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
@@ -25,9 +26,10 @@ export default function LanguageSelector() {
   return (
     <div className="flex items-center">
       <PiTranslateFill
-        className="text-white cursor-pointer"
+        className="cursor-pointer"
         size={24}
         onClick={toggleLanguage}
+        color={isToggled ? "#fff" : "#000000"}
       />
     </div>
   );
