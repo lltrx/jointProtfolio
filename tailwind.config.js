@@ -6,6 +6,9 @@ export default {
   ],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      'display': ['Poppins', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
