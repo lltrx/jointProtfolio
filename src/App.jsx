@@ -31,8 +31,8 @@ function App() {
     return (
     <div className="relative dark:bg-zinc-900">
         <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center ">
-        <Socials color={"#b54400"} />
         <NavBar />
+        <Socials color={"#b54400"} />
         <section id="home" className="snap-center" >
         <Home />
         </section>
