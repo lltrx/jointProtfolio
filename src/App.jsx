@@ -30,13 +30,13 @@ function App() {
 
     return (
     <div className="relative dark:bg-zinc-900">
-        <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center ">
+        <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center">
         <NavBar />
         <Socials color={"#b54400"} />
-        <section id="home" className="snap-center" >
+          <section id="home" className="snap-center flex justify-center" >
         <Home />
         </section>
-        <section id="about" className="snap-center" >
+        <section id="about" className="snap-center w-full flex justify-center" >
           <About />
         </section>
         <section id="timeline" className="snap-center" >

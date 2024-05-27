@@ -20,10 +20,10 @@ export default function ThemeToggle({ isToggled, setToggle}) {
     value={200}
     toggled={isToggled}
     style={{ 
-    color: isToggled ? "#fff" : "#000000",
+    color: isToggled ? "#b54400" : "#000000",
     fontSize: "40px",
-     }}
-     className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+    }}
+    className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
     onToggle={() => {
       setToggle(!isToggled)
       toggleTheme()

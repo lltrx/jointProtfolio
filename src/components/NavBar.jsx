@@ -6,7 +6,7 @@ import Logo from "./logo";
 import { motion } from "framer-motion";
 
 export default function NavBar() {
-  const [isToggled, setToggle] = useState(false);
+  const [isToggled, setToggle] = useState(true);
 
   const handleMouseEnter = (e) => {
     const link = e.target;

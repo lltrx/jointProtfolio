@@ -49,6 +49,7 @@ const loadingVariants = {
 }
 
 const Loading = ({ color }) => {  
+    document.documentElement.classList.add("dark")
 
     return (
         <motion.div 
