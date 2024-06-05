@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import About from "./pages/About.jsx";
 import TimeLine from "./pages/Timeline.jsx";
 import Experiences from "./pages/Experiences.jsx";
+import Email from "./components/Email.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center">
         <NavBar />
         <Socials color={"#b54400"} />
+        <Email color={"#b54400"} />
           <section id="home" className="snap-center flex justify-center" >
         <Home />
         </section>
