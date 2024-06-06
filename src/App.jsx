@@ -41,7 +41,7 @@ function App() {
         <section id="about" className="snap-center w-full flex justify-center" >
           <About />
         </section>
-        <section id="timeline" className="snap-center" >
+        <section id="timeline" className="snap-center w-full flex justify-center" >
           <TimeLine />
         </section>
         <section id="experience" className="snap-center" >

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "company": "Upstatement",
+        "link": "http://upstatement.com",
+        "role": "Lead Engineer",
+        "location": "Boston, MA",
+        "dates": "May 2015 - June 2016",
+        "description": {
+            "bullets": [
+                "Lead development on a variety of projects, including a custom CMS for a major university, a web app for a national non-profit, and a website for a major media company.",
+                "Managed a team of developers, including code reviews, sprint planning, and mentoring.",
+                "Developed a custom WordPress theme for a major media company.",
+                "Developed a custom CMS for a major university.",
+                "Developed a web app for a national non-profit."
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "company": "HCI Team Project",
+        "link": "http://upstatement.com",
+        "role": "Lead Engineer",
+        "location": "Boston, MA",
+        "dates": "August 2016 - Present",
+        "description": {
+            "bullets": [
+                "Had to put up with Ahmed Badawy",
+                "Consantinos put in no work as per usual so I done all that too",
+                "Alexander Lake in particular just fucked around all day"
+            ]
+        }
+    }
+]
