@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import work from '../../public/work.json';
+import work from '../assets/work.json';
 
 export default function TimeLine() {
 

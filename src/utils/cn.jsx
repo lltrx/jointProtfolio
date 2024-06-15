@@ -7,3 +7,7 @@ export function cn({ inputs }) {
 export function dn(...inputs) {
   return twMerge(clsx(inputs));
 }
+
+export function en(...inputs) {
+  return twMerge(clsx(inputs));
+}

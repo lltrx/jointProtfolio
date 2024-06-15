@@ -32,21 +32,21 @@ function App() {
     return (
     <div className="relative dark:bg-zinc-900">
         <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center">
-        <NavBar />
-        <Socials color={"#b54400"} />
-        <Email color={"#b54400"} />
+          <NavBar />
+          <Socials color={"#b54400"} />
+          <Email color={"#b54400"} />
           <section id="home" className="snap-center flex justify-center" >
-        <Home />
-        </section>
-        <section id="about" className="snap-center w-full flex justify-center" >
-          <About />
-        </section>
-        <section id="timeline" className="snap-center w-full flex justify-center" >
-          <TimeLine />
-        </section>
-        <section id="experience" className="snap-center" >
-          <Experiences />
-        </section>
+            <Home />
+          </section>
+          <section id="about" className="snap-center w-full flex justify-center" >
+            <About />
+          </section>
+          <section id="timeline" className="snap-center w-full flex justify-center" >
+            <TimeLine />
+          </section>
+          <section id="experience" className="snap-center w-full flex justify-center" >
+            <Experiences />
+          </section>
         </div>
         {isLoading && <Loading className='dark:bg-zinc-900 absolute' color={"#b54400"} />}
     </div>
