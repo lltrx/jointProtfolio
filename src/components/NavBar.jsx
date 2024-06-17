@@ -61,7 +61,7 @@ export default function NavBar() {
       <div className="flex space-x-4 items-center justify-center">
         <a
           href="#home"
-          className="text-orange-900 font-display hover:text-orange-500 transition duration-300 ease-in-out relative group"
+          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -70,7 +70,7 @@ export default function NavBar() {
         </a>
         <a
           href="#about"
-          className="text-orange-900 font-display hover:text-orange-500 transition duration-300 ease-in-out relative group"
+          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -79,7 +79,7 @@ export default function NavBar() {
         </a>
         <a
           href="#timeline"
-          className="text-orange-900 font-display hover:text-orange-500 transition duration-300 ease-in-out relative group"
+          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -88,7 +88,7 @@ export default function NavBar() {
         </a>
         <a
           href="#experience"
-          className="text-orange-900 font-display hover:text-orange-500 transition duration-300 ease-in-out relative group"
+          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

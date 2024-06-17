@@ -5,7 +5,8 @@
         "shortDescription": "John Doe is a web developer",
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
-        "live": false
+        "live": false,
+        "slug": "john-doe"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "shortDescription": "Jane Doe is a web designer",
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
-        "live": true
+        "live": true,
+        "slug": "jane-doe"
     },
     {
         "id": 3,
@@ -21,6 +23,7 @@
         "shortDescription": "Mike Doe is a web developer",
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
-        "live": false
+        "live": false,
+        "slug": "mike-doe"
     }
 ]
