@@ -60,7 +60,7 @@ export default function NavBar() {
       <Logo isToggled={isToggled} />
       <div className="flex space-x-4 items-center justify-center">
         <a
-          href="#home"
+          href="/#home"
           className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -69,7 +69,7 @@ export default function NavBar() {
           <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
-          href="#about"
+          href="/#about"
           className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -78,7 +78,7 @@ export default function NavBar() {
           <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
-          href="#timeline"
+          href="/#timeline"
           className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -87,7 +87,7 @@ export default function NavBar() {
           <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
-          href="#experience"
+          href="/#experience"
           className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -101,7 +101,7 @@ export default function NavBar() {
           href="/myCV.pdf"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-zinc-600 bg-[linear-gradient(110deg,#09090b,45%,#333,55%,#09090b)] bg-[length:200%_100%] px-6 font-medium text-zinc-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
         >
           My CV
         </a>

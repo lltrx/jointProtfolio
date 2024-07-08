@@ -1,18 +1,18 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/3d-card";
 import projects from "../assets/projects.json";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Experiences() {
     return (
         <div>
-            <h1 className="text-4xl font-bold text-center text-slate-200 mt-20">Projects</h1>
-            
+            <h1 className="text-4xl font-bold text-center text-slate-200 mt-20">Featured Projects</h1>
+            <NavLink to={`/projects`} className={`w-full flex justify-center space-x-1 text-slate-200 pt-2`}><h1 className="hover:underline underline-offset-2">View the archive here</h1><h1>{` >`}</h1></NavLink>
             <div className="flex grid grid-cols-2 space-x-5">
                 {projects.map((project) => (
                     
                     <CardContainer className="inter-var w-[400px]">
-                        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                             <CardItem
                             translateZ="50"
                             className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -38,17 +38,16 @@ export default function Experiences() {
                             <div className="flex justify-between items-center mt-20">
                                 <CardItem
                                     translateZ={20}
-                                    target="__blank"
+                                    as={NavLink}
+                                    to={`/projects/${project.slug}`}    
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    <NavLink href={`/project/${project.slug}`}>
-                                        Read More →
-                                    </NavLink>
+                                    Read More →
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
-                                    href={project.link}
+                                    as={Link}
+                                    to={project.link}
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                                 >
                                     {project.live ? "Try Now" : "Watch the Demo"}

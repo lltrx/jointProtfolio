@@ -2,7 +2,10 @@
     {
         "id": 1,
         "title": "John Doe",
-        "shortDescription": "John Doe is a web developer",
+        "year": "2021",
+        "shortDescription": "John Doe is a web developer",        
+        "madeAt": "University of Glasgow",
+        "builtWith": ["React", "Node.js", "MongoDB"], 
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
         "live": false,
@@ -11,7 +14,10 @@
     {
         "id": 2,
         "title": "Jane Doe",
+        "year": "2021",
         "shortDescription": "Jane Doe is a web designer",
+        "madeAt": "University of Glasgow",
+        "builtWith": ["React", "Node.js", "MongoDB"],
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
         "live": true,
@@ -20,7 +26,10 @@
     {
         "id": 3,
         "title": "Mike Doe",
+        "year": "2021",
         "shortDescription": "Mike Doe is a web developer",
+        "madeAt": "University of Glasgow",
+        "builtWith": ["React", "Node.js", "MongoDB"],
         "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
         "live": false,

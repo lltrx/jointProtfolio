@@ -1,6 +1,7 @@
 import About from "../pages/About.jsx";
 import TimeLine from "../pages/Timeline.jsx";
 import Experiences from "../pages/Experiences.jsx";
+import Footer from "../pages/Footer.jsx";
 import Email from "../components/Email.jsx";
 import Loading from "../components/Loading.jsx";
 import Home from "../pages/Home.jsx";
@@ -30,7 +31,7 @@ export default function Main() {
 
 
     return (
-        <div className="relative dark:bg-zinc-900">
+        <div className="relative dark:bg-zinc-900 font-display">
             <div className="absolute flex flex-col dark:bg-zinc-900 w-full h-fit items-center">
                 <NavBar />
                 <Socials color={"#b54400"} />
@@ -47,6 +48,7 @@ export default function Main() {
                 <section id="experience" className="snap-center w-full flex justify-center" >
                     <Experiences />
                 </section>
+                <Footer />
             </div>
             {isLoading && <Loading className='dark:bg-zinc-900 absolute' color={"#b54400"} />}
         </div>

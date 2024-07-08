@@ -11,15 +11,20 @@ export default {
     },
     extend: {
       animation: {
-        shimmer: "shimmer 2s linear infinite",
+        // Adjust the animation duration to 4s to include the delay
+        shimmer: "shimmer 3s linear infinite",
       },
       keyframes: {
         shimmer: {
-          from: {
-            backgroundPosition: "0 0",
+          '0%': {
+            backgroundPosition: "-10% 0",
           },
-          to: {
-            backgroundPosition: "-200% 0",
+          // End the animation movement at 50% to simulate a 2-second delay
+          '50%': {
+            backgroundPosition: "-212% 0",
+          },
+          '100%': {
+            backgroundPosition: "-212% 0%",
           },
         },
       },
