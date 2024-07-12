@@ -66,7 +66,7 @@ export default function NavBar() {
           onMouseLeave={handleMouseLeave}
         >
           1.Home
-          <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
           href="/#about"
@@ -75,7 +75,7 @@ export default function NavBar() {
           onMouseLeave={handleMouseLeave}
         >
           2.About
-          <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
           href="/#timeline"
@@ -84,7 +84,7 @@ export default function NavBar() {
           onMouseLeave={handleMouseLeave}
         >
           3.Timeline
-          <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <a
           href="/#experience"
@@ -93,7 +93,7 @@ export default function NavBar() {
           onMouseLeave={handleMouseLeave}
         >
           4.Experience
-          <span className="absolute bottom-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
         </a>
         <ThemeToggle isToggled={isToggled} setToggle={setToggle} />
 

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion"
+import { useState, useEffect } from "react"
 
 const lineVariants = {
     initial: {
@@ -93,12 +94,42 @@ const logoVariants3 = {
     },
 }
 
-const Socials = ({ color }) => {
+const Socials = () => {
+
+
+    const [color, setColor] = useState('#b54400');
+
+    useEffect(() => {
+        const updateTheme = () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            setColor(isDark ? '#b54400' : '#9A3412');
+        };
+    
+        // Initial check
+        updateTheme();
+    
+        // Use MutationObserver to watch for class changes on the <html> element
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.type === "attributes" && mutation.attributeName === "class") {
+                    updateTheme();
+                }
+            });
+        });
+    
+        observer.observe(document.documentElement, {
+            attributes: true //configure it to listen to attribute changes
+        });
+    
+        // Cleanup function to disconnect the observer
+        return () => observer.disconnect();
+    }, []);
+
     return (
 
         <div className="w-[50px] flex flex-col fixed bottom-5 left-5 space-y-3">
             <svg 
-                className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out"
+                className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
                 fill="none"  
                 viewBox="0 0 256 256" 
                 id="Flat" 
@@ -124,7 +155,7 @@ const Socials = ({ color }) => {
                         height="132" 
                         x="30" 
                         y="30" 
-                        stroke={color} 
+                        stroke={color}
                         stroke-linecap="round" 
                         stroke-linejoin="round" 
                         stroke-width="10" 
@@ -134,7 +165,7 @@ const Socials = ({ color }) => {
                         rx="16"
                     />
                     <motion.path 
-                        stroke={color} 
+                        stroke={color}
                         stroke-linecap="round" 
                         stroke-linejoin="round" 
                         stroke-width="10" 

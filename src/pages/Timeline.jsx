@@ -45,7 +45,7 @@ export default function TimeLine() {
                                 </div>
                                 <div className='flex flex-col space-y-4'>
                                     {selectedJobDetails.description.bullets.map((bullet, index) => (
-                                        <p key={index}>{"> " + bullet}</p>
+                                        <p key={index}><a className='text-orange-500 text-sm'>⬡ </a>{bullet}</p>
                                     ))}
                                 </div>
                             </motion.div>
