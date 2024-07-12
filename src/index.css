@@ -14,5 +14,9 @@ body {
 
 html {
     scroll-behavior: smooth;
-    
+    background-color: #fff6ed;
+}
+
+.dark {
+    background-color: #18181b;
 }

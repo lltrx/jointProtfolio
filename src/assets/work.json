@@ -30,5 +30,35 @@
                 "Alexander Lake in particular just fucked around all day"
             ]
         }
+    },
+    {
+        "id": 3,
+        "company": "Another Thing",
+        "link": "http://upstatement.com",
+        "role": "Lead Engineer",
+        "location": "Boston, MA",
+        "dates": "August 2016 - Present",
+        "description": {
+            "bullets": [
+                "Had to put up with Ahmed Badawy",
+                "Consantinos put in no work as per usual so I done all that too",
+                "Alexander Lake in particular just fucked around all day"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "company": "And Another Thing",
+        "link": "http://upstatement.com",
+        "role": "Lead Engineer",
+        "location": "Boston, MA",
+        "dates": "August 2016 - Present",
+        "description": {
+            "bullets": [
+                "Had to put up with Ahmed Badawy",
+                "Consantinos put in no work as per usual so I done all that too",
+                "Alexander Lake in particular just fucked around all day"
+            ]
+        }
     }
 ]

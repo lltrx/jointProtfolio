@@ -102,7 +102,7 @@ const Socials = () => {
     useEffect(() => {
         const updateTheme = () => {
             const isDark = document.documentElement.classList.contains('dark');
-            setColor(isDark ? '#b54400' : '#9A3412');
+            setColor(isDark ? '#b54400' : '#C2410C');
         };
     
         // Initial check
@@ -127,7 +127,7 @@ const Socials = () => {
 
     return (
 
-        <div className="w-[50px] flex flex-col fixed bottom-5 left-5 space-y-3">
+        <div className="w-[50px] hidden md:flex flex-col fixed bottom-5 left-5 space-y-3">
             <svg 
                 className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
                 fill="none"  

@@ -55,46 +55,48 @@ export default function NavBar() {
           },
         },
       }}
-      className="sticky top-0 w-full flex items-center justify-between z-20 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-white/50 dark:bg-zinc-900/50"
+      className="sticky top-0 w-full flex items-center justify-between z-20 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-orange-50/50 dark:bg-zinc-900/50"
     >
       <Logo isToggled={isToggled} />
       <div className="flex space-x-4 items-center justify-center">
-        <a
-          href="/#home"
-          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          1.Home
-          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
-        </a>
-        <a
-          href="/#about"
-          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          2.About
-          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
-        </a>
-        <a
-          href="/#timeline"
-          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          3.Timeline
-          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
-        </a>
-        <a
-          href="/#experience"
-          className="text-orange-800 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          4.Experience
-          <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
-        </a>
+        <div className="hidden md:flex space-x-4 items-center justify-center">
+          <a
+            href="/#home"
+            className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            1.Home
+            <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          </a>
+          <a
+            href="/#about"
+            className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            2.About
+            <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          </a>
+          <a
+            href="/#timeline"
+            className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            3.Timeline
+            <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          </a>
+          <a
+            href="/#experience"
+            className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            4.Experience
+            <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
+          </a>
+        </div>
         <ThemeToggle isToggled={isToggled} setToggle={setToggle} />
 
         <a

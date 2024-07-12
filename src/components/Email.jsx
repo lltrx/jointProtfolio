@@ -36,7 +36,7 @@ const Email = () => {
     useEffect(() => {
         const updateTheme = () => {
             const isDark = document.documentElement.classList.contains('dark');
-            setColor(isDark ? '#b54400' : '#9A3412');
+            setColor(isDark ? '#b54400' : '#C2410C');
         };
     
         // Initial check
@@ -60,8 +60,8 @@ const Email = () => {
     }, []);
 
     return (
-        <div className="w-[50px] flex flex-col justify-center fixed bottom-5 right-5">
-            <motion.p style={{ color: color }} className={`text-center rotate-90 mb-48`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:8, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
+        <div className="w-[50px] hidden md:flex font-bold flex-col justify-center fixed bottom-5 right-5">
+            <motion.p style={{ color: color }} className={`text-center rotate-90 mb-52`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:8, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
 
 
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192 1000" xmlSpace="preserve" >
@@ -74,7 +74,7 @@ const Email = () => {
                         variants={lineVariants}
                         initial="initial"
                         animate="animate"
-                        d="M86 86v950"
+                        d="M96 96v950"
                     />      
                 </g>
             </svg>

@@ -11,7 +11,7 @@ export default function Logo({ isToggled }) {
           <path
             id="Hexagon"
             d="M8.69873 26.1547L50 2.3094L91.3013 26.1547L91.3013 73.8453L50 97.6906L8.69873 73.8453L8.69873 26.1547Z"
-            stroke={isToggled ? "#b54400" : "#000000"}
+            stroke={isToggled ? "#b54400" : "#C2410C"}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -19,8 +19,8 @@ export default function Logo({ isToggled }) {
           <path
             id="Letter"
             d="M 25.1 0 L 25.1 35.05 L 22.85 35.05 L 2.25 3.65 L 2.25 35.05 L 0 35.05 L 0 0 L 2.25 0 L 22.85 31.3 L 22.85 0 L 25.1 0 Z"
-            stroke={isToggled ? "#b54400" : "#000000"}
-            fill={isToggled ? "#b54400" : "#000000"}
+            stroke={isToggled ? "#b54400" : "#C2410C"}
+            fill={isToggled ? "#b54400" : "#C2410C"}
             transform="translate(38, 32)"
           />
         </g>

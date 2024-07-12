@@ -56,7 +56,7 @@ const Loading = ({ color }) => {
             variants={loadingVariants} 
             initial = "initial"
             animate = "animate"
-            className="flex flex-col justify-center items-center fixed w-full h-screen bg-zinc-900"
+            className="flex flex-col justify-center items-center fixed w-full h-full bg-zinc-900 z-10"
         >
             <svg className='w-[200px]' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Loading Icon" clipPath="url(#clip0_8_2)">

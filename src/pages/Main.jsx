@@ -1,5 +1,5 @@
 import About from "../pages/About.jsx";
-import TimeLine from "../pages/Timeline.jsx";
+import Worked from "../pages/Worked.jsx";
 import Experiences from "../pages/Experiences.jsx";
 import Footer from "../pages/Footer.jsx";
 import Email from "../components/Email.jsx";
@@ -36,14 +36,14 @@ export default function Main() {
                 <NavBar />
                 <Socials/>
                 <Email/>
-                <section id="home" className="snap-center flex justify-center" >
+                <section id="home" className="snap-center w-full flex justify-center" >
                     <Home />
                 </section>
                 <section id="about" className="snap-center w-full flex justify-center" >
                     <About />
                 </section>
                 <section id="timeline" className="snap-center w-full flex justify-center" >
-                    <TimeLine />
+                    <Worked />
                 </section>
                 <section id="experience" className="snap-center w-full flex justify-center" >
                     <Experiences />
