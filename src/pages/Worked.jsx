@@ -25,8 +25,8 @@ export default function Worked() {
                         ))}
                         
                     </div>
-                    <div className="absolute md:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-orange-50 dark:to-zinc-900"></div>
-                    <div className="absolute md:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-orange-50 dark:to-zinc-900"></div> 
+                    <div className="absolute md:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
+                    <div className="absolute md:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
                 </div>
                 <div className='md:w-2/3'>
                     <AnimatePresence mode='wait'>

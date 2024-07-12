@@ -55,7 +55,7 @@ export default function NavBar() {
           },
         },
       }}
-      className="sticky top-0 w-full flex items-center justify-between z-20 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-orange-50/50 dark:bg-zinc-900/50"
+      className="sticky top-0 w-full flex items-center justify-between z-20 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-blue-50/50 dark:bg-zinc-900/50"
     >
       <Logo isToggled={isToggled} />
       <div className="flex space-x-4 items-center justify-center">
