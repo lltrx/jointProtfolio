@@ -6,15 +6,17 @@ export default function Worked() {
     const [selectedJob, setSelectedJob] = useState(1);
     const selectedJobDetails = work.find(job => job.id === selectedJob);
 
-    // Animation variants for Framer Motion
     const variants = {
         hidden: { opacity: 0 },
         visible: { opacity: 1 },
     };
 
     return (
-        <div className="flex flex-col md:w-2/3 max-w-[860px] items-center pt-60 md:pt-60 md:p-20 space-y-4 h-screen overflow-x-hidden">
-            <h1 className="text-orange-500 text-4xl font-display font-bold text-center w-2/3 md:w-full pb-20">Where I've Worked</h1>
+        <div className="flex flex-col md:w-2/3 max-w-[860px] items-center md:pt-60 md:p-20 space-y-4 h-[750px] overflow-x-hidden">
+            <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-20 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                Where I've Worked
+            </h1> 
+            {/* <h1 className="text-orange-500 text-4xl font-display font-bold text-center w-2/3 md:w-full pb-20">Where I've Worked</h1> */}
             <div className="flex flex-col md:flex-row w-5/6 md:w-full">
                 <div className='relative md:w-1/3'>
                     <div className='flex md:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 md:pb-0'>
