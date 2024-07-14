@@ -1,15 +1,16 @@
 [
     {
         "id": 1,
-        "title": "John Doe",
+        "title": "Building Futures Galloway",
         "year": "2021",
-        "shortDescription": "John Doe is a web developer",        
+        "shortDescription": "A website for Building Futures Galloway, a charity based in Scotland",        
         "madeAt": "University of Glasgow",
-        "builtWith": ["React", "Node.js", "MongoDB"], 
-        "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "link": "https://www.google.com",
-        "live": false,
-        "slug": "john-doe"
+        "builtWith": ["Next.JS", "WordPress", "TailwindCSS"], 
+        "thumbnail": "bfghomepage.png",
+        "link": "https://www.buildingfuturesgalloway.com",
+        "live": true,
+        "slug": "building-futures-galloway",
+        "featured": true
     },
     {
         "id": 2,
@@ -18,10 +19,11 @@
         "shortDescription": "Jane Doe is a web designer",
         "madeAt": "University of Glasgow",
         "builtWith": ["React", "Node.js", "MongoDB"],
-        "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
-        "live": true,
-        "slug": "jane-doe"
+        "live": false,
+        "slug": "jane-doe",
+        "featured": true
     },
     {
         "id": 3,
@@ -30,9 +32,36 @@
         "shortDescription": "Mike Doe is a web developer",
         "madeAt": "University of Glasgow",
         "builtWith": ["React", "Node.js", "MongoDB"],
-        "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "link": "https://www.google.com",
         "live": false,
-        "slug": "mike-doe"
+        "slug": "mike-doe",
+        "featured": false
+    },
+    {
+        "id": 2,
+        "title": "Jane Doe",
+        "year": "2021",
+        "shortDescription": "Jane Doe is a web designer",
+        "madeAt": "University of Glasgow",
+        "builtWith": ["React", "Node.js", "MongoDB"],
+        "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "link": "https://www.google.com",
+        "live": true,
+        "slug": "jane-doe",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "title": "Jane Doe",
+        "year": "2021",
+        "shortDescription": "Jane Doe is a web designer",
+        "madeAt": "University of Glasgow",
+        "builtWith": ["React", "Node.js", "MongoDB"],
+        "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "link": "https://www.google.com",
+        "live": true,
+        "slug": "jane-doe",
+        "featured": true
     }
 ]

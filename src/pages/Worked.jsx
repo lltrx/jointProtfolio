@@ -12,7 +12,7 @@ export default function Worked() {
     };
 
     return (
-        <div className="flex flex-col md:w-2/3 max-w-[860px] items-center md:pt-60 md:p-20 space-y-4 h-[750px] overflow-x-hidden">
+        <div className="flex flex-col md:w-2/3 max-w-[860px] items-center md:pt-40 md:p-20 space-y-4 h-fit overflow-x-hidden">
             <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-20 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                 Where I've Worked
             </h1> 

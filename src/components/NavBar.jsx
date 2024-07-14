@@ -66,7 +66,7 @@ export default function NavBar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            1.Home
+            Home
             <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
           </a>
           <a
@@ -75,7 +75,7 @@ export default function NavBar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            2.About
+            About
             <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
           </a>
           <a
@@ -84,7 +84,7 @@ export default function NavBar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            3.Timeline
+            Timeline
             <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
           </a>
           <a
@@ -93,7 +93,7 @@ export default function NavBar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            4.Experience
+            Experience
             <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
           </a>
         </div>

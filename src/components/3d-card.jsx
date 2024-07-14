@@ -41,7 +41,7 @@ return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
     <div
         className={en(
-        "py-20 flex items-center justify-center",
+        "py-10 flex items-center justify-center",
         containerClassName
         )}
         style={{

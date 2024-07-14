@@ -2,6 +2,7 @@ import projects from "../assets/projects.json";
 import NavBar from "../components/NavBar";
 import Socials from "../components/Socials";
 import Email from "../components/Email";
+import { NavLink } from "react-router-dom";
 
 export default function Projects() {
 
@@ -10,8 +11,16 @@ export default function Projects() {
             <NavBar />
             <Socials color={"#b54400"} />
             <Email color={"#b54400"} />
+            
+            <div className="w-full flex pl-10 pt-10 space-x-4 text-zinc-500 pt-2 font-bold">
+                <NavLink to={`/`} ><h1 className="hover:underline underline-offset-2">Home</h1></NavLink>
+                <h1>{`>`}</h1>
+                <h1 className="text-orange-500">Projects</h1>
+            </div>
             <div className="w-full flex flex-col items-center">
-                <h1 className="text-orange-500 text-3xl text-center py-20">Projects</h1>
+                <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-20 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                    Project Archive
+                </h1>
                 <table className="w-2/3 table-auto">
                     <tr className="text-zinc-600">
                         <th className="pb-6">Year</th>

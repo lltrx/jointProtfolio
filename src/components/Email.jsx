@@ -61,7 +61,7 @@ const Email = () => {
 
     return (
         <div className="w-[50px] hidden md:flex font-bold flex-col justify-center fixed bottom-5 right-5">
-            <motion.p style={{ color: color }} className={`text-center rotate-90 mb-52`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:8, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
+            <motion.p style={{ color: color }} className={`text-center rotate-90 mb-60 tracking-wider`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:8, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
 
 
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192 1000" xmlSpace="preserve" >
