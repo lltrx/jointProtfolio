@@ -2,6 +2,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/3d-card";
 import projects from "../assets/projects.json";
 import { NavLink, Link } from 'react-router-dom';
+import LanguagesLogos from "../assets/languagesLogos";
 
 export default function Projects() {
 
@@ -43,21 +44,20 @@ export default function Projects() {
                             <CardItem
                             as="p"
                             translateZ="60"
-                            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mt-10"
+                            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mt-10 flex"
                             >
-                                {project.builtWith.map((tech, index) => {
-                                    if (index === project.builtWith.length - 1) {
-                                        return(
-                                            <span key={index}>{tech}</span>
-                                        )
-                                    }
-                                    else {
-                                        return(
-                                            <span key={index}>{tech + " · "}</span>
-                                        )
-                                    }
-                                }
-                                )}
+                                {project.builtWith?.map((tech, index) => {
+                                        const isLastItem = index === project.builtWith.length - 1;
+                                        return (
+                                            <div key={index} className="relative flex w-[60px] items-center justify-center">
+                                                <div className="group flex flex-col w-full items-center justify-center text-center mx-2">
+                                                    <LanguagesLogos language={tech} className="w-full mx-auto transition-transform duration-200 ease-in-out group-hover:scale-110 group-hover:-translate-y-1" />
+                                                    <span className="absolute bottom-0 inset-x-0 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out text-xs">{tech}</span>
+                                                </div>
+                                                {!isLastItem && <span>·</span>}
+                                            </div>
+                                        );
+                                    })}
                             </CardItem>
                             <div className="flex justify-between items-center mt-5 2xl:mt-10">
                                 <CardItem

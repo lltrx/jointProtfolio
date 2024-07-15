@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar styles */
-*::-webkit-scrollbar {
-    display: none;
+/* This applies to the entire webpage */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
 }
 
-body {
-    scrollbar-width: none;
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
 }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
 
 
 html {

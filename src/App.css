@@ -34,3 +34,12 @@
   color: #888;
 }
 
+
+.table-row-spacing th {
+  padding-bottom: 2rem;
+}
+
+.table-row-spacing td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

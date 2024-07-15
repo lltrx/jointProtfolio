@@ -49,13 +49,14 @@ const loadingVariants = {
 }
 
 const Loading = ({ color }) => {  
-    document.documentElement.classList.add("dark")
 
     if (document.documentElement.classList.contains('noAnimation')) {
         return
     }
 
     else {
+        document.documentElement.classList.add("dark")
+
         return (
             <motion.div 
                 variants={loadingVariants} 
