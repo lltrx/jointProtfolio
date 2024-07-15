@@ -68,21 +68,21 @@ export default function NavBar() {
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a
-              href="/#timeline"
+              href="/#worked"
               className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Timeline
+              Where I've Worked
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a
-              href="/#experience"
+              href="/#projects"
               className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Experience
+              Projects
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
           </div>
@@ -142,21 +142,21 @@ export default function NavBar() {
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a
-              href="/#timeline"
+              href="/#worked"
               className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Timeline
+              Where I've Worked
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a
-              href="/#experience"
+              href="/#projects"
               className="text-orange-700 font-display font-bold hover:text-orange-500 transition duration-300 ease-in-out relative group"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Experience
+              Projcets
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
           </div>

@@ -8,6 +8,7 @@ import Home from "../pages/Home.jsx";
 import NavBar from "../components/NavBar.jsx";
 import Socials from "../components/Socials.jsx";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Main() {
 
@@ -39,6 +40,10 @@ export default function Main() {
                 clearTimeout(timer);
             };
         }
+        else {
+            document.documentElement.classList.remove('noAnimation'); // Replace 'your-class-name' with the actual class name you want to add
+            document.documentElement.classList.add('noAnimation'); // Replace 'your-class-name' with the actual class name you want to add
+        }
     }, []);
 
     return (
@@ -47,19 +52,25 @@ export default function Main() {
                 <NavBar />
                 <Socials/>
                 <Email/>
-                <section id="home" className="snap-center w-full flex justify-center" >
-                    <Home />
-                </section>
-                <section id="about" className="snap-center w-full flex justify-center" >
-                    <About />
-                </section>
-                <section id="timeline" className="snap-center w-full flex justify-center" >
-                    <Worked />
-                </section>
-                <section id="experience" className="snap-center w-full flex justify-center" >
-                    <Experiences />
-                </section>
-                <Footer />
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <section id="home" className="snap-center w-full flex justify-center" >
+                        <Home />
+                    </section>
+                    <section id="about" className="snap-center w-full flex justify-center" >
+                        <About />
+                    </section>
+                    <section id="worked" className="snap-center w-full flex justify-center" >
+                        <Worked />
+                    </section>
+                    <section id="projects" className="snap-center w-full flex justify-center" >
+                        <Experiences />
+                    </section>
+                    <Footer />
+                </motion.div>
             </div>
             {isLoading && <Loading className='dark:bg-zinc-900 absolute' color={"#b54400"} />}
         </div>
