@@ -10,7 +10,7 @@ className,
 return (
     <div
     className={dn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-blue-50 dark:bg-zinc-900 w-full rounded-md z-0",
+        "relative flex min-h-[400px] flex-col items-center justify-center overflow-hidden bg-blue-50 dark:bg-zinc-900 w-full rounded-md z-0",
         className
     )}
     >
@@ -63,7 +63,7 @@ return (
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-zinc-900 "></div>
     </div>
 
-    <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+    <div className="absolute z-50 flex flex-col items-center px-5 bottom-20">
         {children}
     </div>
     </div>

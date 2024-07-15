@@ -73,7 +73,7 @@ export default function NavBar() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Where I've Worked
+              Work Experience
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a
@@ -147,7 +147,7 @@ export default function NavBar() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Where I've Worked
+              Work Experience
               <span className="absolute bottom-0 h-[1px] bg-orange-500 transition-all duration-300 ease-in-out pointer-events-none"></span>
             </a>
             <a

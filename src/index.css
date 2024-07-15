@@ -5,6 +5,7 @@
 /* This applies to the entire webpage */
 ::-webkit-scrollbar {
     width: 8px; /* Width of the scrollbar */
+    height: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -19,8 +20,6 @@
 html.dark ::-webkit-scrollbar-thumb:hover {
     background: #bbb;
 }
-
-
 
 html {
     scroll-behavior: smooth;

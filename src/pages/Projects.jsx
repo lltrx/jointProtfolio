@@ -1,19 +1,70 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { CardBody, CardContainer, CardItem } from "../components/3d-card";
 import projects from "../assets/projects.json";
 import { NavLink, Link } from 'react-router-dom';
 import LanguagesLogos from "../assets/languagesLogos";
+import { LampContainer } from "../components/lamp";
+import { LampContainerSmall } from "../components/lampSmall";
 
 export default function Projects() {
 
     const featuredProjects = projects.filter(project => project.featured === true).slice(0, 3);
 
+    const [dark, setDark] = useState(true);
+
+    useEffect(() => {
+        const updateTheme = () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            setDark(isDark);
+        };
+    
+        // Initial check
+        updateTheme();
+    
+        // Use MutationObserver to watch for class changes on the <html> element
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.type === "attributes" && mutation.attributeName === "class") {
+                    updateTheme();
+                }
+            });
+        });
+    
+        observer.observe(document.documentElement, {
+            attributes: true //configure it to listen to attribute changes
+        });
+    
+        // Cleanup function to disconnect the observer
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <div>
-            <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-40 pb-4 md:pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
-                Projects
-            </h1>   
-            <NavLink to={`/archive`} className={`w-full flex justify-center space-x-1 text-slate-200`}><h1 className="hover:underline underline-offset-2">View the archive here</h1><h1>{` >`}</h1></NavLink>
+        <div className="md:pt-32">
+            {
+                dark ? (
+                    <div>
+                        <LampContainer className={"hidden md:flex w-full justify-center"}>
+                            <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                                Projects
+                            </h1>      
+                            <NavLink to={`/archive`} className={`w-full flex justify-center space-x-1 text-slate-200`}><h1 className="hover:underline underline-offset-2">View the archive here</h1><h1>{` >`}</h1></NavLink>
+                        </LampContainer>
+                        <LampContainerSmall className={"flex md:hidden w-full justify-center"}>
+                            <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                                Projects
+                            </h1>      
+                            <NavLink to={`/archive`} className={`w-full flex justify-center space-x-1 text-slate-200`}><h1 className="hover:underline underline-offset-2">View the archive here</h1><h1>{` >`}</h1></NavLink>
+                        </LampContainerSmall>
+                    </div>
+                ) : (
+                    <div className="mt-64 md:mt-48 md:mb-20 mb-40">
+                        <h1 className="pt-24 md:pt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                            Projects
+                        </h1>      
+                        <NavLink to={`/archive`} className={`w-full flex justify-center space-x-1 text-zinc-800 dark:text-slate-200`}><h1 className="hover:underline underline-offset-2">View the archive here</h1><h1>{` >`}</h1></NavLink>
+                    </div>
+                )
+            }
             <div className="hidden xl:grid grid-cols-3">
                 {featuredProjects.map((project) => (
                     
@@ -133,7 +184,7 @@ export default function Projects() {
             ))
             }
             </div>
-            <div className="lg:hidden grid grid-cols-1">
+            <div className="lg:hidden grid grid-cols-1 -translate-y-32">
                 {featuredProjects.map((project, index) => (
                     index < 2 && (
                         <div className="inter-var flex w-[350px] my-10">
