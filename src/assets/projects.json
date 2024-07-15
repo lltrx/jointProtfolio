@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "title": "Jane Doe",
+        "title": "GuitarGuitar JSON Visualiser",
         "year": "2021",
         "shortDescription": "Jane Doe is a web designer",
         "madeAt": "University of Glasgow",
@@ -40,7 +40,7 @@
     },
     {
         "id": 2,
-        "title": "Jane Doe",
+        "title": "Heart Rate Recovery Tracker",
         "year": "2021",
         "shortDescription": "Jane Doe is a web designer",
         "madeAt": "University of Glasgow",

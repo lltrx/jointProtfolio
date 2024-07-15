@@ -14,21 +14,32 @@ export default function Main() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Prevent scrolling when the component mounts
-        document.body.style.overflow = 'hidden';
-
-        // Set a timeout to allow scrolling after 5 seconds
-        const timer = setTimeout(() => {
-            document.body.style.overflow = 'auto';
-            setIsLoading(false);
-        }, 5000); // 5000 milliseconds = 5 seconds
-
-        // Clear the timeout when the component unmounts
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []); 
-
+        if (!document.documentElement.classList.contains('noAnimation')) {
+            // Prevent scrolling when the component mounts
+            document.body.style.overflow = 'hidden';
+        
+            // Set a timeout to allow scrolling after 5 seconds
+            const timer = setTimeout(() => {
+                document.body.style.overflow = 'auto';
+                setIsLoading(false);
+        
+                // After an additional 10 seconds, add a class to the <html> element
+                const classTimer = setTimeout(() => {
+                    document.documentElement.classList.add('noAnimation'); // Replace 'your-class-name' with the actual class name you want to add
+                }, 15000); // 10000 milliseconds = 10 seconds
+        
+                // Return a function to clear the nested timeout
+                return () => {
+                    clearTimeout(classTimer);
+                };
+            }, 5000); // 5000 milliseconds = 5 seconds
+        
+            // Clear the initial timeout when the component unmounts
+            return () => {
+                clearTimeout(timer);
+            };
+        }
+    }, []);
 
     return (
         <div className="relative dark:bg-zinc-900 font-display">

@@ -101,8 +101,9 @@ export default function Footer() {
                     </svg>
             </div>
             <p className="flex md:hidden text-center text-orange-600"><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></p>
-            <div className="text-slate-800 dark:text-slate-200">
-                <h1 className="underline-offset-2 text-center">Made by <a className="text-orange-600 hover:underline" href="https://www.linkedin.com/in/nathan-hutchison-400583188">Nathan Hutchison</a> & <a className="text-orange-600 hover:underline" href="https://www.linkedin.com/in/turki-almutairi-7bb768231/">Turki Almutairi</a></h1>
+            <div className="text-slate-800 dark:text-slate-200 underline-offset-2">
+                <h1 className="underline-offset-2 text-center">Designed and Built by</h1>
+                    <a className="text-orange-600 hover:underline " href="https://www.linkedin.com/in/nathan-hutchison-400583188">Nathan Hutchison</a> & <a className="text-orange-600 hover:underline" href="https://www.linkedin.com/in/turki-almutairi-7bb768231/">Turki Almutairi</a>
                 <p className="w-full text-center">© 2024</p>
             </div>
         </div>
