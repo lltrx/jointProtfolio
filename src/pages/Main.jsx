@@ -1,6 +1,6 @@
 import About from "../pages/About.jsx";
 import Worked from "../pages/Worked.jsx";
-import Experiences from "../pages/Experiences.jsx";
+import Projects from "../pages/Projects.jsx";
 import Footer from "../pages/Footer.jsx";
 import Email from "../components/Email.jsx";
 import Loading from "../components/Loading.jsx";
@@ -68,7 +68,7 @@ export default function Main() {
                         <Worked />
                     </section>
                     <section id="projects" className="snap-center w-full flex justify-center" >
-                        <Experiences />
+                        <Projects />
                     </section>
                     <Footer />
                 </motion.div>
