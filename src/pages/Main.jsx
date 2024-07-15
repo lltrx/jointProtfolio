@@ -56,6 +56,7 @@ export default function Main() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    className="w-full"
                 >
                     <section id="home" className="snap-center w-full flex justify-center" >
                         <Home />
