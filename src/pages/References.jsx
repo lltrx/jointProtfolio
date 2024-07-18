@@ -1,4 +1,5 @@
 import { InfiniteMovingCards } from "../components/infinite-moving-cards";
+import { motion } from "framer-motion";
 
 export default function References() {
   const testimonials = [
@@ -33,16 +34,29 @@ export default function References() {
     },
   ];
   return (
-    <div className="py-12 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-12">
+      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">
           References
         </h2>
-        <InfiniteMovingCards
-          items={testimonials}
-          speed="slow"
-          direction="left"
-        />
+        <div className="relative">
+          {/* Left fade effect */}
+          <div className="absolute top-0 left-0 w-[10%] h-full bg-gradient-to-r from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
+          {/* Right fade effect */}
+          <div className="absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
+          <motion.div
+            className="overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <InfiniteMovingCards
+              items={testimonials}
+              speed="slow"
+              direction="left"
+            />
+          </motion.div>
+        </div>
       </div>
     </div>
   );
