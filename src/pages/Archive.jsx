@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LanguagesLogos from "../assets/languagesLogos";
 import { useState } from "react";
 import { ExpandableCard } from "../components/expandable-cards";
+import { LinkPreview } from "../components/link-preview";
 
 export default function Archive() {
   const [activeCard, setActiveCard] = useState(null);
@@ -32,20 +33,20 @@ export default function Archive() {
           <h1 className="text-orange-700 dark:text-orange-700">Projects</h1>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-20 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+          <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Project Archive
           </h1>
+          <p className="mb-10 text-zinc-400 text-center max-w-[300px]">A collection of my work from throughout the years! Select a project to learn more.</p>
 
           {/* ## TABLE ROW PADDING IS APPLIED IN APP.CSS FOR ABSTRACTION */}
 
-          <table className="w-4/6 table-auto table-row-spacing">
+          <table className="w-full md:w-4/6 table-auto table-row-spacing">
             <tr className="text-zinc-600">
               <th>Year</th>
               <th>Title</th>
-              <th>Made at</th>
-              <th>Built with</th>
+              <th className="hidden md:table-cell">Made at</th>
+              <th className="hidden md:table-cell">Built with</th>
               <th>Link</th>
-              <th>Details</th>
             </tr>
             {projects.map((project) => (
               <motion.tr
@@ -56,9 +57,18 @@ export default function Archive() {
                 <td className="text-orange-700 dark:text-orange-600 text-lg">
                   {project.year}
                 </td>
-                <td className="text-lg font-bold">{project.title}</td>
-                <td className="text-zinc-500">{project.madeAt}</td>
-                <td className="flex items-center justify-center text-sm text-zinc-500">
+                <td className="max-w-[100px] md:max-w-full">
+                  <motion.button
+                    layoutId={`button-${project.id}`}
+                    onClick={() => setActiveCard(project)}
+                    className="text-lg font-bold underline-offset-2 underline"
+                  >
+                    {project.title}
+                  </motion.button>
+                </td>
+                {/* <td className="text-lg font-bold">{project.title}</td> */}
+                <td className="text-zinc-500 hidden md:table-cell">{project.madeAt}</td>
+                <td className="hidden md:flex items-center justify-center text-sm text-zinc-500">
                   {project.builtWith?.map((tech, index) => {
                     const isLastItem = index === project.builtWith.length - 1;
                     return (
@@ -81,25 +91,18 @@ export default function Archive() {
                   })}
                 </td>
                 <td>
-                  <a href={project.link}>
-                    <FontAwesomeIcon
-                      icon={faLink}
-                      color={
-                        document.documentElement.classList.contains("dark")
-                          ? "#B54400"
-                          : "#C2410C"
-                      }
-                    />
-                  </a>
-                </td>
-                <td>
-                  <motion.button
-                    layoutId={`button-${project.id}`}
-                    onClick={() => setActiveCard(project)}
-                    className="px-4 py-2 rounded-xl text-xs font-normal text-orange-700 dark:text-orange-500 hover:underline"
-                  >
-                    Read More
-                  </motion.button>
+                  <LinkPreview url={project.link}>
+                    <a href={project.link}>
+                      <FontAwesomeIcon
+                        icon={faLink}
+                        color={
+                          document.documentElement.classList.contains("dark")
+                            ? "#B54400"
+                            : "#C2410C"
+                        }
+                      />
+                    </a>
+                  </ LinkPreview>
                 </td>
               </motion.tr>
             ))}

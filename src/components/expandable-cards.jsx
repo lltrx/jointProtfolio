@@ -71,15 +71,24 @@ export function ExpandableCard({ active, setActive, cards }) {
               >
                 {active.longDescription}
               </motion.div>
-              <motion.a
-                layoutId={`button-${active.id}`}
-                href={active.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block px-4 py-2 bg-orange-500 text-white rounded-full"
-              >
-                {active.live ? "Try Now" : "Watch Demo"}
-              </motion.a>
+              <div className="mt-4 flex justify-between items-center">
+                <motion.button
+                  onClick={() => setActive(null)}
+                  className="px-4 py-2 bg-orange-500 text-white rounded-full"
+                >
+                  Close
+                </motion.button>
+                <motion.a
+                  layoutId={`button-${active.id}`}
+                  href={active.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-black dark:bg-white dark:text-black text-white rounded-full"
+                >
+                  {active.live ? "Try Now" : "Watch Demo"}
+                </motion.a>
+              </div>
+              
             </div>
           </motion.div>
         </motion.div>

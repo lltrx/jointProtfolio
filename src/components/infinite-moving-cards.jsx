@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -6,6 +6,20 @@ export const InfiniteMovingCards = ({
   direction = "left",
 }) => {
   const containerRef = useRef(null);
+  const [animationPlayState, setAnimationPlayState] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const updateMedia = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', updateMedia);
+    updateMedia();
+
+    return () => window.removeEventListener('resize', updateMedia);
+  }, []);
+
 
   useEffect(() => {
     const container = containerRef.current;
@@ -21,10 +35,15 @@ export const InfiniteMovingCards = ({
     container.style.setProperty("--scroll-width", `${scrollWidth}px`);
     container.style.setProperty("--animation-duration", animationDuration);
     container.style.setProperty("--animation-direction", animationDirection);
+    container.style.setProperty("animation-play-state", animationPlayState ? "running" : "paused");
   }, [speed, direction, items]);
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full"
+      onClick={() => isMobile && setAnimationPlayState(!animationPlayState)}
+      onMouseEnter={() => !isMobile && setAnimationPlayState(false)}
+      onMouseLeave={() => !isMobile && setAnimationPlayState(true)}
+    >
       <div
         ref={containerRef}
         className="flex animate-scroll"
@@ -32,10 +51,12 @@ export const InfiniteMovingCards = ({
           "--scroll-width": "0px",
           "--animation-duration": "30s",
           "--animation-direction": "normal",
+          "animation-play-state": animationPlayState ? "running" : "paused",
         }}
+
       >
         {items.concat(items).map((item, index) => (
-          <div key={index} className="flex-shrink-0 mx-4 w-[300px]">
+          <div key={index} className="flex-shrink-0 mx-4 w-[225px] md:w-[300px]">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <p className="text-gray-600 dark:text-gray-300">{item.quote}</p>
               <div className="mt-4">

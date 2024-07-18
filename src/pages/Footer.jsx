@@ -130,9 +130,9 @@ export default function Footer() {
           <span className="text-orange-600 hover:underline">
             Nathan Hutchison
           </span>
-        </LinkPreview>{" "}
-        &{" "}
-        <LinkPreview url="https://www.linkedin.com/in/turki-almutairi-7bb768231/">
+        </LinkPreview>
+        {" & "}
+        <LinkPreview url="https://www.linkedin.com/in/turki-almutairi-7bb768231">
           <span className="text-orange-600 hover:underline">
             Turki Almutairi
           </span>

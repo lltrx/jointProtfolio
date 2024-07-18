@@ -50,6 +50,9 @@ export default function Projects() {
 
   return (
     <div className="md:pt-32">
+
+    {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
+
       {dark ? (
         <div>
           <LampContainer className={"hidden md:flex w-full justify-center"}>
@@ -99,6 +102,9 @@ export default function Projects() {
           </NavLink>
         </div>
       )}
+
+
+
       <AnimatePresence>
         {activeCard && (
           <motion.div
@@ -163,7 +169,7 @@ export default function Projects() {
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {!activeCard && (
+        {(
           <div className="hidden xl:grid grid-cols-3">
             {featuredProjects.map((project) => (
               <AnimatePresence key={project.id}>
@@ -183,13 +189,6 @@ export default function Projects() {
                           className="text-xl font-bold text-neutral-600 dark:text-white"
                         >
                           {project.title}
-                        </CardItem>
-                        <CardItem
-                          as="p"
-                          translateZ="60"
-                          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                        >
-                          {project.shortDescription}
                         </CardItem>
                         <CardItem translateZ="100" className="w-full mt-4">
                           <img

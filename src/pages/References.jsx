@@ -1,44 +1,65 @@
 import { InfiniteMovingCards } from "../components/infinite-moving-cards";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { LampContainer } from "../components/lamp";
+import { LampContainerSmall } from "../components/lampSmall";
+// CHANGED THIS SLIGHTLY SO THE REFERENCES ARE IN A JSON INSTEAD OF DECLARED IN THE FUNCTION - WILL MAKE BUILDING A BACKEND EASIER IF WE NEED IT (I THINK!)
+import references from "../assets/references.json";
 
 export default function References() {
-  const testimonials = [
-    {
-      quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
-    },
-    {
-      quote:
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
-    },
-    {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
-    },
-    {
-      quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
-    },
-    {
-      quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
-    },
-  ];
-  return (
-    <div className="py-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">
-          References
-        </h2>
+
+  const [dark, setDark] = useState(true);
+
+  useEffect(() => {
+      const updateTheme = () => {
+          const isDark = document.documentElement.classList.contains('dark');
+          setDark(isDark);
+      };
+  
+      // Initial check
+      updateTheme();
+  
+      // Use MutationObserver to watch for class changes on the <html> element
+      const observer = new MutationObserver(mutations => {
+          mutations.forEach(mutation => {
+              if (mutation.type === "attributes" && mutation.attributeName === "class") {
+                  updateTheme();
+              }
+          });
+      });
+  
+      observer.observe(document.documentElement, {
+          attributes: true //configure it to listen to attribute changes
+      });
+  
+      // Cleanup function to disconnect the observer
+      return () => observer.disconnect();
+  }, []);
+
+  return ( 
+    <div className="py-12 mt-28 w-full">
+      <div className="max-w-full lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
+        {
+          dark ? (
+            <div className="w-full">
+              <LampContainer className={"hidden md:flex w-full justify-center"}>
+                <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                  References
+                </h1>
+              </LampContainer>
+              <LampContainerSmall className={"flex md:hidden w-full justify-center"}>
+                <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                  References
+                </h1>
+              </LampContainerSmall>
+            </div>
+          ) : (
+            <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                References
+              </h1>
+          )
+        }
+        
         <div className="relative">
           {/* Left fade effect */}
           <div className="absolute top-0 left-0 w-[10%] h-full bg-gradient-to-r from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
@@ -51,7 +72,7 @@ export default function References() {
             transition={{ duration: 0.5 }}
           >
             <InfiniteMovingCards
-              items={testimonials}
+              items={references}
               speed="slow"
               direction="left"
             />

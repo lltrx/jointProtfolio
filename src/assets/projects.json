@@ -39,7 +39,7 @@
         "featured": false
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Heart Rate Recovery Tracker",
         "year": "2021",
         "shortDescription": "Jane Doe is a web designer",
@@ -52,7 +52,7 @@
         "featured": true
     },
     {
-        "id": 2,
+        "id": 5,
         "title": "Jane Doe",
         "year": "2021",
         "shortDescription": "Jane Doe is a web designer",
