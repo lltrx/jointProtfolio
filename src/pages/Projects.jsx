@@ -49,7 +49,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="md:pt-32">
+    <div className="md:pt-20">
 
     {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
 
@@ -87,7 +87,7 @@ export default function Projects() {
           </LampContainerSmall>
         </div>
       ) : (
-        <div className="mt-64 md:mt-48 md:mb-20 mb-40">
+        <div className="mt-64 md:mt-44 md:mb-20 mb-40">
           <h1 className="pt-24 md:pt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Projects
           </h1>

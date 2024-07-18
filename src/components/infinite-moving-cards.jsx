@@ -60,7 +60,7 @@ export const InfiniteMovingCards = ({
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <p className="text-gray-600 dark:text-gray-300">{item.quote}</p>
               <div className="mt-4">
-                <p className="font-semibold">{item.name}</p>
+                <p className="text-zinc-800 dark:text-zinc-200 font-semibold">{item.name}</p>
                 <p className="text-sm text-gray-500">{item.title}</p>
               </div>
             </div>

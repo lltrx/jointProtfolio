@@ -15,7 +15,7 @@ export default function Archive() {
   const [activeCard, setActiveCard] = useState(null);
 
   return (
-    <div className="relative dark:bg-zinc-900 font-display w-full h-screen flex flex-col items-center bg-blue-50 text-slate-200">
+    <div className="relative dark:bg-zinc-900 font-display w-full h-screen flex flex-col items-center bg-blue-50 text-slate-200 px-[8px]">
       <NavBar />
       <Socials />
       <Email />
@@ -33,7 +33,7 @@ export default function Archive() {
           <h1 className="text-orange-700 dark:text-orange-700">Projects</h1>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h1 className="mt-8 bg-gradient-to-br from-orange-900 to-orange-500 pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+          <h1 className="mt-8 bg-gradient-to-br font-bold from-orange-900 to-orange-500 pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Project Archive
           </h1>
           <p className="mb-10 text-zinc-400 text-center max-w-[300px]">A collection of my work from throughout the years! Select a project to learn more.</p>
@@ -54,7 +54,7 @@ export default function Archive() {
                 layoutId={`row-${project.id}`}
                 className="text-center"
               >
-                <td className="text-orange-700 dark:text-orange-600 text-lg">
+                <td className="text-orange-700 dark:text-orange-600 text-lg font-bold">
                   {project.year}
                 </td>
                 <td className="max-w-[100px] md:max-w-full">

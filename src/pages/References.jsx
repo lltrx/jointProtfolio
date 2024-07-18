@@ -37,7 +37,7 @@ export default function References() {
   }, []);
 
   return ( 
-    <div className="py-12 mt-28 w-full">
+    <div className="pb-12 md:mt-20 w-full">
       <div className="max-w-full lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
         {
           dark ? (
@@ -46,17 +46,31 @@ export default function References() {
                 <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                   References
                 </h1>
+                <p className="text-zinc-400">
+                  Hover over the carsousel to stop
+                </p>
               </LampContainer>
               <LampContainerSmall className={"flex md:hidden w-full justify-center"}>
                 <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                   References
                 </h1>
+                <p className="text-zinc-400">
+                  Hover over the carsousel to stop
+                </p>
               </LampContainerSmall>
             </div>
           ) : (
-            <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+            <div className="flex flex-col items-center w-full mt-40 pt-6 mb-20 ">
+              <h1 className="font-bold bg-gradient-to-br from-orange-900 to-orange-500 pt-6 pb-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                 References
               </h1>
+              <p className="hidden md:flex text-zinc-500">
+                Hover over the carsousel to stop
+              </p>
+              <p className="flex md:hidden text-zinc-500">
+                Click on the carsousel to play/pause
+              </p>
+            </div>
           )
         }
         

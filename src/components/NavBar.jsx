@@ -83,7 +83,7 @@ export default function NavBar() {
   }, [lastScrollY]);
   
   return (
-    <header className={`sticky top-0 w-full flex items-center justify-between z-10 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-blue-50/50 dark:bg-zinc-900/90 transition duration-300 ease-in-out ${navbarStyle}`}>
+    <header className={`sticky top-0 w-full flex items-center justify-between z-40 px-4 h-20 shadow-md backdrop-filter backdrop-blur-sm bg-blue-50/50 dark:bg-zinc-900/90 transition duration-300 ease-in-out ${navbarStyle}`}>
       <NavLink to={'/'}>
         <Logo isToggled={isToggled} />
       </NavLink>
