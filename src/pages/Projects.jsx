@@ -49,7 +49,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="md:pt-20">
+    <div className="h-[1350px] md:h-vh md:pt-20">
 
     {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
 

@@ -61,7 +61,7 @@ export default function About() {
                                         </h1>       
                                     </div>           
                                 </LampContainerSmall> 
-                                <div className="flex flex-col w-2/3 space-y-10 -translate-y-28">
+                                <div className="flex flex-col w-5/6 space-y-10 -translate-y-28">
                                     <p className="mt-8 text-lg text-center text-zinc-800 dark:text-slate-200 font-display">
                                         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                                     </p> 
@@ -92,7 +92,7 @@ export default function About() {
                                 </div>     
                             </div> 
                             <div className="flex md:hidden justify-center mt-16">
-                                <div className="flex flex-col w-2/3 mt-2">
+                                <div className="flex flex-col w-5/6 mt-2">
                                     <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                                         About Me
                                     </h1>   

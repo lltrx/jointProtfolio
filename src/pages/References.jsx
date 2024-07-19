@@ -60,7 +60,7 @@ export default function References() {
               </LampContainerSmall>
             </div>
           ) : (
-            <div className="flex flex-col items-center w-full mt-40 pt-6 mb-20 ">
+            <div className="flex flex-col items-center w-full mt-72 pt-10 mb-20 ">
               <h1 className="font-bold bg-gradient-to-br from-orange-900 to-orange-500 pt-6 pb-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                 References
               </h1>

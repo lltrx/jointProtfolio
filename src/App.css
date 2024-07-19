@@ -53,7 +53,6 @@
   }
 }
 
-/* Tailwind utility for the bounce animation */
 .animate-bounce-5px {
   animation: bounce 2s infinite ease-in-out;
 }

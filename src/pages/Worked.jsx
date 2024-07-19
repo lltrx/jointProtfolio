@@ -42,7 +42,7 @@ export default function Worked() {
     }, []);
 
     return (
-        <div className="flex flex-col w-full items-center md:pt-20 md:p-20 md:mb-20 mb-48 space-y-4 h-fit overflow-x-hidden">
+        <div className="flex flex-col w-full items-center md:pt-20 md:p-20 md:mb-20 md:mb-48 space-y-4 h-fit overflow-x-hidden">
             {dark ? (
                 <div className='pt-60 md:pt-0 w-full'>
                     <div className='flex flex-col items-center w-full'>
