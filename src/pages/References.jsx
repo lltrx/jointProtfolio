@@ -46,16 +46,16 @@ export default function References() {
                 <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                   References
                 </h1>
-                <p className="text-zinc-400">
-                  Hover over the carsousel to stop
+                <p className="text-zinc-400 animate-bounce-5px">
+                  Hover over the carousel to stop
                 </p>
               </LampContainer>
               <LampContainerSmall className={"flex md:hidden w-full justify-center"}>
                 <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                   References
                 </h1>
-                <p className="text-zinc-400">
-                  Hover over the carsousel to stop
+                <p className="text-zinc-400 animate-bounce-5px">
+                  Click on the carousel to play/pause
                 </p>
               </LampContainerSmall>
             </div>
@@ -64,11 +64,11 @@ export default function References() {
               <h1 className="font-bold bg-gradient-to-br from-orange-900 to-orange-500 pt-6 pb-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                 References
               </h1>
-              <p className="hidden md:flex text-zinc-500">
-                Hover over the carsousel to stop
+              <p className="hidden md:flex text-zinc-500 animate-bounce-5px">
+                Hover over the carousel to stop
               </p>
-              <p className="flex md:hidden text-zinc-500">
-                Click on the carsousel to play/pause
+              <p className="flex md:hidden text-zinc-500 animate-bounce-5px">
+                Click on the carousel to play/pause
               </p>
             </div>
           )

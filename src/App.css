@@ -43,3 +43,17 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+/* Tailwind utility for the bounce animation */
+.animate-bounce-5px {
+  animation: bounce 2s infinite ease-in-out;
+}

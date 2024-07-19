@@ -61,7 +61,7 @@ export default function Projects() {
             </h1>
             <NavLink
               to={`/archive`}
-              className={`w-full flex justify-center space-x-1 text-slate-200`}
+              className={`w-full flex justify-center space-x-1 text-slate-200 animate-bounce-5px`}
             >
               <h1 className="hover:underline underline-offset-2">
                 View the archive here
@@ -77,7 +77,7 @@ export default function Projects() {
             </h1>
             <NavLink
               to={`/archive`}
-              className={`w-full flex justify-center space-x-1 text-slate-200`}
+              className={`w-full flex justify-center space-x-1 text-slate-200 animate-bounce-5px`}
             >
               <h1 className="hover:underline underline-offset-2">
                 View the archive here
@@ -93,7 +93,7 @@ export default function Projects() {
           </h1>
           <NavLink
             to={`/archive`}
-            className={`w-full flex justify-center space-x-1 text-zinc-800 dark:text-slate-200`}
+            className={`w-full flex justify-center space-x-1 text-zinc-800 dark:text-slate-200 animate-bounce-5px`}
           >
             <h1 className="hover:underline underline-offset-2">
               View the archive here
@@ -254,108 +254,114 @@ export default function Projects() {
           </div>
         )}
       </AnimatePresence>
-      <div className="hidden lg:grid xl:hidden grid-cols-2 mt-10">
-        {featuredProjects.map(
-          (project, index) =>
-            index < 2 && (
-              <CardContainer className="inter-var w-[350px] mx-5">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                  <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
-                  >
-                    {project.title}
-                  </CardItem>
-                  <CardItem
-                    as="p"
-                    translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                  >
-                    {project.shortDescription}
-                  </CardItem>
-                  <CardItem translateZ="100" className="w-full mt-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      height="1000"
-                      width="1000"
-                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                      alt="thumbnail"
-                    />
-                  </CardItem>
-                  <div className="flex justify-between items-center mt-5 2xl:mt-20">
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      onClick={() => setActiveCard(project)}
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+
+      <AnimatePresence>
+        <div className="hidden lg:grid xl:hidden grid-cols-2 mt-10">
+          {featuredProjects.map(
+            (project, index) =>
+              index < 2 && (
+                <AnimatePresence key={project.id}>
+                  {activeCardId !== project.id && (
+                    <motion.div
+                      layoutId={`card-${project.id}-${id}`}
+                      initial={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
                     >
-                      Read More → 2
-                    </CardItem>
-                    <CardItem
-                      translateZ={20}
-                      as={Link}
-                      to={project.link}
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                    >
-                      {project.live ? "Try Now" : "Watch the Demo"}
-                    </CardItem>
-                  </div>
-                </CardBody>
-              </CardContainer>
-            )
-        )}
-      </div>
-      <div className="lg:hidden grid grid-cols-1 -translate-y-32">
-        {featuredProjects.map(
-          (project, index) =>
-            index < 2 && (
-              <div className="inter-var flex w-[350px] my-10">
-                <div className="bg-gray-50 relative group/card dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                  <div
-                    translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
-                  >
-                    {project.title}
-                  </div>
-                  <div
-                    as="p"
-                    translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                  >
-                    {project.shortDescription}
-                  </div>
-                  <div translateZ="100" className="w-full mt-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      height="1000"
-                      width="1000"
-                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                      alt="thumbnail"
-                    />
-                  </div>
-                  <div className="flex justify-between items-center mt-6">
+                      <CardContainer className="inter-var w-[350px] mx-5">
+                        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                          <CardItem
+                            translateZ="50"
+                            className="text-xl font-bold text-neutral-600 dark:text-white"
+                          >
+                            {project.title}
+                          </CardItem>
+                          <CardItem translateZ="100" className="w-full mt-4">
+                            <img
+                              src={project.thumbnail}
+                              height="1000"
+                              width="1000"
+                              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                              alt="thumbnail"
+                            />
+                          </CardItem>
+                          <div className="flex justify-between items-center mt-5 2xl:mt-20">
+                            <CardItem
+                                layoutId={`button-${project.id}-${id}`}
+                                translateZ={20}
+                                as="button"
+                                onClick={() => setActiveCard(project)}
+                                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                              >
+                              Read More →
+                            </CardItem>
+                            <CardItem
+                              translateZ={20}
+                              as={Link}
+                              to={project.link}
+                              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                            >
+                              {project.live ? "Try Now" : "Watch the Demo"}
+                            </CardItem>
+                          </div>
+                        </CardBody>
+                      </CardContainer>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              )
+          )}
+        </div>
+      </AnimatePresence>
+
+      <AnimatePresence>
+        <div className="lg:hidden grid grid-cols-1 -translate-y-32">
+          {featuredProjects.map(
+            (project, index) =>
+              index < 2 && (
+                <div className="inter-var flex w-[350px] my-10">
+                  <div className="bg-gray-50 relative group/card dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                     <div
-                      translateZ={20}
-                      as={NavLink}
-                      to={`/projects/${project.slug}`}
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                      translateZ="50"
+                      className="text-xl font-bold text-neutral-600 dark:text-white"
                     >
-                      Read More → 3
+                      {project.title}
                     </div>
-                    <div
-                      translateZ={20}
-                      as={Link}
-                      to={project.link}
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                    >
-                      {project.live ? "Try Now" : "Watch the Demo"}
+                    <div translateZ="100" className="w-full mt-4">
+                      <img
+                        src={project.thumbnail}
+                        height="1000"
+                        width="1000"
+                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
+                    </div>
+                    <div className="flex justify-between items-center mt-6">
+                      <div
+                        layoutId={`button-${1}-${id}`}
+                        translateZ={20}
+                        as="button"
+                        onClick={() => setActiveCard(project)}
+                        className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                      >
+                        Read More →
+                      </div>
+                      <Link to = {project.link}>
+                        <div
+                          translateZ={20}
+                          as={Link}
+                          to={project.link}
+                          className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                        >
+                          {project.live ? "Try Now" : "Watch the Demo"}
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
-        )}
-      </div>
+              )
+          )}
+        </div>
+      </AnimatePresence>
     </div>
   );
 }
