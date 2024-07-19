@@ -49,7 +49,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="h-[1350px] md:h-vh md:pt-20">
+    <div className="h-[1350px] md:h-vh md:pt-20 w-full">
 
     {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
 
@@ -87,7 +87,7 @@ export default function Projects() {
           </LampContainerSmall>
         </div>
       ) : (
-        <div className="mt-64 md:mt-44 md:mb-20 mb-40">
+        <div className="mt-64 md:mt-44 md:mb-28 md:pb-2 mb-40">
           <h1 className="pt-24 md:pt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Projects
           </h1>
@@ -170,7 +170,7 @@ export default function Projects() {
       </AnimatePresence>
       <AnimatePresence>
         {(
-          <div className="hidden xl:grid grid-cols-3">
+          <div className="hidden xl:grid grid-cols-3 w-5/6 mx-auto">
             {featuredProjects.map((project) => (
               <AnimatePresence key={project.id}>
                 {activeCardId !== project.id && (
@@ -180,7 +180,7 @@ export default function Projects() {
                     exit={{ opacity: 0 }}
                   >
                     <CardContainer
-                      className="inter-var w-[300px] 2xl:w-[400px] mx-10"
+                      className="inter-var w-[350px] 2xl:w-[400px] mx-10"
                       layoutId={`card-${project.id}-${id}`}
                     >
                       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -256,7 +256,7 @@ export default function Projects() {
       </AnimatePresence>
 
       <AnimatePresence>
-        <div className="hidden lg:grid xl:hidden grid-cols-2 mt-10">
+        <div className="hidden lg:grid xl:hidden grid-cols-2 w-5/6 mx-auto mt-10">
           {featuredProjects.map(
             (project, index) =>
               index < 2 && (
@@ -318,7 +318,7 @@ export default function Projects() {
           {featuredProjects.map(
             (project, index) =>
               index < 2 && (
-                <div className="inter-var flex w-[350px] my-10">
+                <div className="inter-var flex w-[350px] mx-auto my-10">
                   <div className="bg-gray-50 relative group/card dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                     <div
                       translateZ="50"

@@ -42,29 +42,29 @@ export default function Worked() {
     }, []);
 
     return (
-        <div className="flex flex-col w-full items-center md:pt-20 md:p-20 md:mb-20 md:mb-48 space-y-4 h-fit overflow-x-hidden">
+        <div className="flex flex-col w-full items-center lg:pt-20 lg:p-20 lg:mb-20 lg:mb-48 space-y-4 h-fit overflow-x-hidden">
             {dark ? (
-                <div className='pt-60 md:pt-0 w-full'>
+                <div className='pt-60 lg:pt-0 w-full'>
                     <div className='flex flex-col items-center w-full'>
-                        <LampContainer className={"hidden md:flex w-full justify-center"}>
+                        <LampContainer className={"hidden lg:flex w-full justify-center"}>
                             <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                                 Work Experience
                             </h1>  
                         </LampContainer>
-                        <div className="hidden md:flex flex-col md:w-2/3 max-w-[860px] md:flex-row w-5/6 md:w-full">
-                            <div className='relative md:w-1/3'>
-                                <div className='flex md:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 md:pb-0'>
+                        <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-2/3 max-w-[860px]">
+                            <div className='relative lg:w-1/3'>
+                                <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                     {work.map((job) => (
-                                        <div key={job.id} className={`px-4 md:px-5 py-2 border-b-2 md:border-l-2 md:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
+                                        <div key={job.id} className={`px-4 lg:px-5 py-2 border-b-2 lg:border-l-2 lg:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
                                             <button className='cursor-pointer' onClick={() => setSelectedJob(job.id)}>{job.company}</button>
                                         </div>
                                     ))}
                                     
                                 </div>
-                                <div className="absolute md:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
-                                <div className="absolute md:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
+                                <div className="absolute lg:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
+                                <div className="absolute lg:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
                             </div>
-                            <div className='md:w-2/3'>
+                            <div className='lg:w-2/3'>
                                 <AnimatePresence mode='wait'>
                                     {selectedJobDetails && (
                                         <motion.div
@@ -76,7 +76,7 @@ export default function Worked() {
                                             transition={{ duration: 0.2 }}
                                             className='flex flex-col text-slate-900 dark:text-slate-200'
                                         >
-                                            <div className='flex text-lg md:text-xl mb-2'>
+                                            <div className='flex text-lg lg:text-xl mb-2'>
                                                 <h2>{selectedJobDetails.role}</h2>
                                                 <h1 className='ml-2 text-orange-500'><a href={selectedJobDetails.link}>@ {selectedJobDetails.company}</a></h1>
                                             </div>
@@ -88,7 +88,7 @@ export default function Worked() {
                                                 {selectedJobDetails.description.bullets.map((bullet, index) => (
                                                     <div className='flex space-x-3'>
                                                         <p className='text-orange-500 text-sm'>⬡ </p>
-                                                        <p key={index} className='text-sm md:text-base'>{bullet}</p>
+                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
                                                     </div>
                                                 ))}
                                             </div>
@@ -99,25 +99,25 @@ export default function Worked() {
                         </div>
                     </div>
                     <div className='flex flex-col items-center w-full'>
-                        <LampContainerSmall className={"flex md:hidden w-full justify-center"}>
+                        <LampContainerSmall className={"flex lg:hidden w-full justify-center"}>
                             <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                                 Work Experience
                             </h1>      
                         </LampContainerSmall>
-                        <div className="flex md:hidden flex-col md:w-2/3 max-w-[860px] md:flex-row w-5/6 md:w-full -translate-y-28">
-                            <div className='relative md:w-1/3'>
-                                <div className='flex md:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 md:pb-0'>
+                        <div className="flex lg:hidden flex-col lg:w-2/3 max-w-[860px] lg:flex-row w-5/6 md:w-2/3 lg:w-full -translate-y-28">
+                            <div className='relative lg:w-1/3'>
+                                <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                     {work.map((job) => (
-                                        <div key={job.id} className={`px-4 md:px-5 py-2 border-b-2 md:border-l-2 md:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
+                                        <div key={job.id} className={`px-4 lg:px-5 py-2 border-b-2 lg:border-l-2 lg:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
                                             <button className='cursor-pointer' onClick={() => setSelectedJob(job.id)}>{job.company}</button>
                                         </div>
                                     ))}
                                     
                                 </div>
-                                <div className="absolute md:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
-                                <div className="absolute md:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
+                                <div className="absolute lg:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
+                                <div className="absolute lg:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
                             </div>
-                            <div className='md:w-2/3'>
+                            <div className='lg:w-2/3'>
                                 <AnimatePresence mode='wait'>
                                     {selectedJobDetails && (
                                         <motion.div
@@ -129,7 +129,7 @@ export default function Worked() {
                                             transition={{ duration: 0.2 }}
                                             className='flex flex-col text-slate-900 dark:text-slate-200'
                                         >
-                                            <div className='flex text-lg md:text-xl mb-2'>
+                                            <div className='flex text-lg lg:text-xl mb-2'>
                                                 <h2>{selectedJobDetails.role}</h2>
                                                 <h1 className='ml-2 text-orange-500'><a href={selectedJobDetails.link}>@ {selectedJobDetails.company}</a></h1>
                                             </div>
@@ -141,7 +141,7 @@ export default function Worked() {
                                                 {selectedJobDetails.description.bullets.map((bullet, index) => (
                                                     <div className='flex space-x-3'>
                                                         <p className='text-orange-500 text-sm'>⬡ </p>
-                                                        <p key={index} className='text-sm md:text-base'>{bullet}</p>
+                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
                                                     </div>
                                                 ))}
                                             </div>
@@ -153,24 +153,24 @@ export default function Worked() {
                     </div>
                 </div>
             ) : (
-                <div className="flex flex-col w-full items-center mt-96 md:mt-48 space-y-4 h-fit overflow-x-hidden">
-                    <h1 className="mt-24 md:mt-6 font-bold md:mb-16 mb-6 bg-gradient-to-br from-orange-900 to-orange-500 py-6 md:py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                <div className="flex flex-col w-full items-center mt-96 lg:mt-48 space-y-4 h-fit overflow-x-hidden">
+                    <h1 className="mt-24 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                         Work Experience
                     </h1> 
-                    <div className="flex flex-col md:flex-row w-5/6 md:w-2/3 max-w-[860px]">
-                        <div className='relative md:w-1/3'>
-                            <div className='flex md:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 md:pb-0'>
+                    <div className="flex flex-col lg:flex-row w-5/6 md:w-2/3 lg:w-2/3 max-w-[860px]">
+                        <div className='relative lg:w-1/3'>
+                            <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                 {work.map((job) => (
-                                    <div key={job.id} className={`px-4 md:px-5 py-2 border-b-2 md:border-l-2 md:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
+                                    <div key={job.id} className={`px-4 lg:px-5 py-2 border-b-2 lg:border-l-2 lg:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
                                         <button className='cursor-pointer' onClick={() => setSelectedJob(job.id)}>{job.company}</button>
                                     </div>
                                 ))}
                                 
                             </div>
-                            <div className="absolute md:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
-                            <div className="absolute md:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
+                            <div className="absolute lg:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
+                            <div className="absolute lg:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
                         </div>
-                        <div className='w-full md:w-2/3'>
+                        <div className='w-full lg:w-2/3'>
                             <AnimatePresence mode='wait'>
                                 {selectedJobDetails && (
                                     <motion.div
@@ -182,7 +182,7 @@ export default function Worked() {
                                         transition={{ duration: 0.2 }}
                                         className='flex flex-col text-slate-900 dark:text-slate-200'
                                     >
-                                        <div className='flex text-lg md:text-xl mb-2'>
+                                        <div className='flex text-lg lg:text-xl mb-2'>
                                             <h2>{selectedJobDetails.role}</h2>
                                             <h1 className='ml-2 text-orange-500'><a href={selectedJobDetails.link}>@ {selectedJobDetails.company}</a></h1>
                                         </div>
@@ -194,7 +194,7 @@ export default function Worked() {
                                             {selectedJobDetails.description.bullets.map((bullet, index) => (
                                                 <div className='flex space-x-3'>
                                                     <p className='text-orange-500 text-sm'>⬡ </p>
-                                                    <p key={index} className='text-sm md:text-base'>{bullet}</p>
+                                                    <p key={index} className='text-sm lg:text-base'>{bullet}</p>
                                                 </div>
                                             ))}
                                         </div>

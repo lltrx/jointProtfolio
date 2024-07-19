@@ -38,7 +38,7 @@ export default function References() {
 
   return ( 
     <div className="pb-12 md:mt-20 w-full">
-      <div className="max-w-full lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
+      <div className="mx-auto px-8 sm:px-6 lg:px-2">
         {
           dark ? (
             <div className="w-full">
@@ -60,7 +60,7 @@ export default function References() {
               </LampContainerSmall>
             </div>
           ) : (
-            <div className="flex flex-col items-center w-full mt-72 pt-10 mb-20 ">
+            <div className="flex flex-col items-center w-full mt-72 lg:mt-36 pt-10 mb-20 ">
               <h1 className="font-bold bg-gradient-to-br from-orange-900 to-orange-500 pt-6 pb-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                 References
               </h1>
@@ -74,7 +74,7 @@ export default function References() {
           )
         }
         
-        <div className="relative">
+        <div className="relative max-w-full lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto">
           {/* Left fade effect */}
           <div className="absolute top-0 left-0 w-[10%] h-full bg-gradient-to-r from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
           {/* Right fade effect */}

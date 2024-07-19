@@ -127,7 +127,7 @@ const Socials = () => {
 
     return (
 
-        <div className="w-[50px] hidden md:flex flex-col fixed bottom-5 left-5">
+        <div className="w-[50px] hidden md:flex flex-col fixed bottom-5 left-5 z-20">
             {
                 document.documentElement.classList.contains('noAnimation') ? (
                     <div className="flex flex-col space-y-4">

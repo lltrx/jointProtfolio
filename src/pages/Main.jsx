@@ -26,7 +26,7 @@ export default function Main() {
 
         // After an additional 10 seconds, add a class to the <html> element
         const classTimer = setTimeout(() => {
-          document.documentElement.classList.add("noAnimation"); // Replace 'your-class-name' with the actual class name you want to add
+          document.documentElement.classList.add("noAnimation");
         }, 15000); // 10000 milliseconds = 10 seconds
 
         // Return a function to clear the nested timeout
@@ -40,8 +40,8 @@ export default function Main() {
         clearTimeout(timer);
       };
     } else {
-      document.documentElement.classList.remove("noAnimation"); // Replace 'your-class-name' with the actual class name you want to add
-      document.documentElement.classList.add("noAnimation"); // Replace 'your-class-name' with the actual class name you want to add
+      document.documentElement.classList.remove("noAnimation");
+      document.documentElement.classList.add("noAnimation");
     }
   }, []);
 

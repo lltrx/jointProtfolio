@@ -40,9 +40,9 @@ export default function About() {
                 {
                     dark ? (
                         <div className="w-full">
-                            <div className="hidden md:flex flex-col items-center">
+                            <div className="hidden lg:flex flex-col items-center">
                                 <LampContainer className={"flex w-full justify-center"}>
-                                    <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                                    <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent lg:text-7xl">
                                         About Me
                                     </h1>      
                                 </LampContainer>
@@ -53,7 +53,7 @@ export default function About() {
                                     <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
                                 </div>  
                             </div>
-                            <div className="flex flex-col items-center md:hidden">
+                            <div className="flex flex-col items-center lg:hidden">
                                 <LampContainerSmall>
                                     <div className="flex flex-col">
                                         <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl translate-y-12">
@@ -71,8 +71,8 @@ export default function About() {
                         </div>
                     ) : (
                         <div className="relative z-50 flex flex-col items-center pt-48">
-                            <div className="hidden md:flex flex-col w-2/3">
-                                <h1 className="mt-6 font-bold mb-24 bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                            <div className="hidden lg:flex flex-col w-2/3">
+                                <h1 className="mt-6 font-bold mb-24 bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent lg:text-7xl">
                                     About Me
                                 </h1>   
                                 <div 
@@ -91,7 +91,7 @@ export default function About() {
                                     <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
                                 </div>     
                             </div> 
-                            <div className="flex md:hidden justify-center mt-16">
+                            <div className="flex lg:hidden justify-center mt-16">
                                 <div className="flex flex-col w-5/6 mt-2">
                                     <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                                         About Me

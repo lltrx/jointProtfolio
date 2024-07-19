@@ -60,7 +60,7 @@ const Email = () => {
     }, []);
 
     return (
-        <div className="w-[50px] hidden md:flex font-bold flex-col justify-center fixed bottom-5 right-5">
+        <div className="w-[50px] hidden md:flex font-bold flex-col justify-center fixed bottom-5 right-5 z-20">
             {
                 document.documentElement.classList.contains('noAnimation') ? (
                     <div>
