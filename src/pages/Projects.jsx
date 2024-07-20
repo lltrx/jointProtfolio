@@ -49,13 +49,13 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="h-[1350px] md:h-vh md:pt-20 w-full">
+    <div className="h-[1350px] lg:h-[1200px] md:pt-20 w-full">
 
     {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
 
       {dark ? (
         <div>
-          <LampContainer className={"hidden md:flex w-full justify-center"}>
+          <LampContainer className={"hidden lg:flex w-full justify-center"}>
             <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
               Projects
             </h1>
@@ -70,7 +70,7 @@ export default function Projects() {
             </NavLink>
           </LampContainer>
           <LampContainerSmall
-            className={"flex md:hidden w-full justify-center"}
+            className={"flex lg:hidden w-full justify-center"}
           >
             <h1 className="mt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
               Projects
@@ -87,7 +87,7 @@ export default function Projects() {
           </LampContainerSmall>
         </div>
       ) : (
-        <div className="mt-64 md:mt-44 md:mb-28 md:pb-2 mb-40">
+        <div className="mt-64 md:mt-72 lg:mt-44 mb-40 lg:mb-28 lg:pb-2 xl:pb-0 xl:mb-20">
           <h1 className="pt-24 md:pt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Projects
           </h1>
@@ -314,7 +314,7 @@ export default function Projects() {
       </AnimatePresence>
 
       <AnimatePresence>
-        <div className="lg:hidden grid grid-cols-1 -translate-y-32">
+        <div className="lg:hidden grid grid-cols-1 -translate-y-32 md:-translate-y-0">
           {featuredProjects.map(
             (project, index) =>
               index < 2 && (

@@ -48,7 +48,6 @@ return (
         <div className="absolute  w-[100%] right-0 bg-blue-50 dark:bg-zinc-900 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
         </motion.div>
 
-        <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-zinc-900 "></div>
     </div>
 
     <div className="absolute z-50 flex flex-col items-center px-5 bottom-40">

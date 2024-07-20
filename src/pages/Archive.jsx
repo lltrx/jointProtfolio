@@ -40,11 +40,11 @@ export default function Archive() {
 
           {/* ## TABLE ROW PADDING IS APPLIED IN APP.CSS FOR ABSTRACTION */}
 
-          <table className="w-full md:w-4/6 table-auto table-row-spacing">
+          <table className="w-full md:w-4/5 xl:w-4/6 table-auto table-row-spacing">
             <tr className="text-zinc-600">
               <th>Year</th>
               <th>Title</th>
-              <th className="hidden md:table-cell">Made at</th>
+              <th className="hidden xl:table-cell">Made at</th>
               <th className="hidden md:table-cell">Built with</th>
               <th>Link</th>
             </tr>
@@ -61,13 +61,12 @@ export default function Archive() {
                   <motion.button
                     layoutId={`button-${project.id}`}
                     onClick={() => setActiveCard(project)}
-                    className="text-lg font-bold underline-offset-2 underline"
+                    className="text-lg text-zinc-900 dark:text-zinc-200 font-bold underline-offset-2 underline"
                   >
                     {project.title}
                   </motion.button>
                 </td>
-                {/* <td className="text-lg font-bold">{project.title}</td> */}
-                <td className="text-zinc-500 hidden md:table-cell">{project.madeAt}</td>
+                <td className="text-zinc-500 hidden xl:table-cell">{project.madeAt}</td>
                 <td className="hidden md:flex items-center justify-center text-sm text-zinc-500">
                   {project.builtWith?.map((tech, index) => {
                     const isLastItem = index === project.builtWith.length - 1;

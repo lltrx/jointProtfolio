@@ -79,6 +79,13 @@ const Loading = ({ color }) => {
                         />
                         <motion.path 
                             id="Letter" 
+
+                            // PATH FOR THE LETTER "T"
+                            // d="M 0 0 L 25.8 0 L 25.8 1.08 L 13.5 1.08 L 13.5 42.24 L 12.3 42.24 L 12.3 1.08 L 0 1.08 L 0 0 Z"
+
+                            // PATH FOR THE LETTER "N"
+                            // d="M 25.1 0 L 25.1 35.05 L 22.85 35.05 L 2.25 3.65 L 2.25 35.05 L 0 35.05 L 0 0 L 2.25 0 L 22.85 31.3 L 22.85 0 L 25.1 0 Z" 
+                            
                             d="M 25.1 0 L 25.1 35.05 L 22.85 35.05 L 2.25 3.65 L 2.25 35.05 L 0 35.05 L 0 0 L 2.25 0 L 22.85 31.3 L 22.85 0 L 25.1 0 Z" 
                             stroke={color}
                             stroke-linecap="round"

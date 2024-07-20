@@ -70,7 +70,7 @@ export default function About() {
                             </div>
                         </div>
                     ) : (
-                        <div className="relative z-50 flex flex-col items-center pt-48">
+                        <div className="relative z-50 flex flex-col items-center pt-48 md:pt-40 lg:pt-48">
                             <div className="hidden lg:flex flex-col w-2/3">
                                 <h1 className="mt-6 font-bold mb-24 bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent lg:text-7xl">
                                     About Me

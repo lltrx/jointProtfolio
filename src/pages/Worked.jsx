@@ -154,10 +154,10 @@ export default function Worked() {
                 </div>
             ) : (
                 <div className="flex flex-col w-full items-center mt-96 lg:mt-48 space-y-4 h-fit overflow-x-hidden">
-                    <h1 className="mt-24 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+                    <h1 className="mt-28 md:mt-20 lg:mt-8 pt-2 mb-8 lg:mb-16 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
                         Work Experience
                     </h1> 
-                    <div className="flex flex-col lg:flex-row w-5/6 md:w-2/3 lg:w-2/3 max-w-[860px]">
+                    <div className="flex lg:hidden flex-col lg:w-2/3 max-w-[860px] lg:flex-row w-5/6 md:w-2/3 lg:w-full">
                         <div className='relative lg:w-1/3'>
                             <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                 {work.map((job) => (
@@ -203,6 +203,52 @@ export default function Worked() {
                             </AnimatePresence>
                         </div>
                     </div>
+                    <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-2/3 max-w-[860px]">
+                            <div className='relative lg:w-1/3'>
+                                <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
+                                    {work.map((job) => (
+                                        <div key={job.id} className={`px-4 lg:px-5 py-2 border-b-2 lg:border-l-2 lg:border-b-0 ${job.id === selectedJob ? 'border-orange-500' : 'border-orange-900'}`}>
+                                            <button className='cursor-pointer' onClick={() => setSelectedJob(job.id)}>{job.company}</button>
+                                        </div>
+                                    ))}
+                                    
+                                </div>
+                                <div className="absolute lg:hidden inset-y-0 -left-1 w-5 bg-gradient-to-l from-transparent to-blue-50 dark:to-zinc-900"></div>
+                                <div className="absolute lg:hidden inset-y-0 -right-1 w-5 bg-gradient-to-r from-transparent to-blue-50 dark:to-zinc-900"></div> 
+                            </div>
+                            <div className='lg:w-2/3'>
+                                <AnimatePresence mode='wait'>
+                                    {selectedJobDetails && (
+                                        <motion.div
+                                            key={selectedJobDetails.id} // Ensure this key changes to trigger animations
+                                            initial="hidden"
+                                            animate="visible"
+                                            exit="hidden"
+                                            variants={variants}
+                                            transition={{ duration: 0.2 }}
+                                            className='flex flex-col text-slate-900 dark:text-slate-200'
+                                        >
+                                            <div className='flex text-lg lg:text-xl mb-2'>
+                                                <h2>{selectedJobDetails.role}</h2>
+                                                <h1 className='ml-2 text-orange-500'><a href={selectedJobDetails.link}>@ {selectedJobDetails.company}</a></h1>
+                                            </div>
+                                            <div className='flex flex-col space-y-1 mb-5'>
+                                                <p>{selectedJobDetails.dates}</p>
+                                                <p>{selectedJobDetails.location}</p>
+                                            </div>
+                                            <div className='flex flex-col space-y-4'>
+                                                {selectedJobDetails.description.bullets.map((bullet, index) => (
+                                                    <div className='flex space-x-3'>
+                                                        <p className='text-orange-500 text-sm'>⬡ </p>
+                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        </div>
                 </div>
                 
             )}
