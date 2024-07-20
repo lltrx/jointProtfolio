@@ -7,15 +7,20 @@ import { motion } from "framer-motion";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LanguagesLogos from "../assets/languagesLogos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExpandableCard } from "../components/expandable-cards";
 import { LinkPreview } from "../components/link-preview";
 
 export default function Archive() {
   const [activeCard, setActiveCard] = useState(null);
 
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+    document.documentElement.classList.add("noAnimation");
+  }, []);
+
   return (
-    <div className="relative dark:bg-zinc-900 font-display w-full h-screen flex flex-col items-center bg-blue-50 text-slate-200 px-[8px]">
+    <div className="relative dark:bg-zinc-900 font-display w-full h-fit flex flex-col items-center bg-blue-50 text-slate-200 lg:px-[8px]">
       <NavBar />
       <Socials />
       <Email />

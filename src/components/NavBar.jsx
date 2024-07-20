@@ -70,7 +70,8 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = debounce(() => {
       // Apply the behavior based on screen width
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1024 && window.location.pathname === '/') {
+        console.log(window.location.pathname)
         controlNavbar();
       } else {
         // Always visible on larger screens

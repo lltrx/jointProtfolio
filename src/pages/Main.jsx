@@ -47,7 +47,7 @@ export default function Main() {
 
   return (
     <div
-      className="relative dark:bg-zinc-900 font-display md:ml-[8px]" /*ml-[8px] balances the 8px wide scroll bar*/
+      className="relative dark:bg-zinc-900 font-display lg:ml-[8px]" /*ml-[8px] balances the 8px wide scroll bar*/
     >
       <div className="absolute flex flex-col dark:bg-zinc-900 bg-blue-50 w-full h-fit items-center">
         <NavBar />
