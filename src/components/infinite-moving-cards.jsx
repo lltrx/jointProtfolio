@@ -56,9 +56,9 @@ export const InfiniteMovingCards = ({
 
       >
         {items.concat(items).map((item, index) => (
-          <div key={index} className="flex-shrink-0 mx-4 w-[225px] md:w-[300px]">
+          <div key={index} className="flex-shrink-0 mx-4 w-[275px] md:w-[300px]">
             <div className="bg-grey-50 dark:bg-zinc-950 p-6 my-2 rounded-lg shadow-md shadow-orange-500/[0.25] border border-orange-500/[0.4]">
-              <p className="text-gray-600 dark:text-gray-300">{item.quote}</p>
+              <p className="text-gray-600 dark:text-gray-300 italic">{item.quote}</p>
               <div className="mt-4">
                 <p className="text-zinc-800 dark:text-zinc-200 font-semibold">{item.name}</p>
                 <p className="text-sm text-gray-500">{item.title}</p>

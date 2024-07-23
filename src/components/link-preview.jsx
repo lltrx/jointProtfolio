@@ -12,6 +12,7 @@ import { cn } from "../utils/cn";
 export const LinkPreview = ({
   children,
   url,
+  side = "top",
   className,
   width = 200,
   height = 125,
@@ -80,7 +81,7 @@ export const LinkPreview = ({
 
         <HoverCardPrimitive.Content
           className="[transform-origin:var(--radix-hover-card-content-transform-origin)]"
-          side="top"
+          side={side}
           align="center"
           sideOffset={10}
         >

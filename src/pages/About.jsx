@@ -50,7 +50,7 @@ export default function About() {
                                     <p className="text-lg text-center text-zinc-800 dark:text-slate-200 font-display w-1/2">
                                         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                                     </p> 
-                                    <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
+                                    <img src="/profile.jpg" className="w-[200px] rounded-full mx-auto" />
                                 </div>  
                             </div>
                             <div className="flex flex-col items-center lg:hidden">
@@ -65,7 +65,7 @@ export default function About() {
                                     <p className="mt-8 text-lg text-center text-zinc-800 dark:text-slate-200 font-display">
                                         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                                     </p> 
-                                    <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
+                                    <img src="/profile.jpg" className="w-[200px] rounded-full mx-auto" />
                                 </div>           
                             </div>
                         </div>
@@ -88,7 +88,7 @@ export default function About() {
                                     <p className="text-lg text-center text-zinc-800 dark:text-slate-200 font-display w-1/2">
                                         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                                     </p> 
-                                    <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
+                                    <img src="/profile.jpg" className="w-[200px] rounded-full mx-auto" />
                                 </div>     
                             </div> 
                             <div className="flex lg:hidden justify-center mt-16">
@@ -100,7 +100,7 @@ export default function About() {
                                         <p className="mt-8 text-lg text-center text-zinc-800 dark:text-slate-200 font-display">
                                             I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                                         </p> 
-                                        <img src="/profile.png" className="w-[200px] rounded-full mx-auto" />
+                                        <img src="/profile.jpg" className="w-[200px] rounded-full mx-auto" />
                                     </div>     
                                 </div>           
                             </div>

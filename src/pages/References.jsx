@@ -38,7 +38,7 @@ export default function References() {
 
   return ( 
     <div className="pb-12 md:mt-20 w-full">
-      <div className="mx-auto px-8 sm:px-6 lg:px-2">
+      <div className="mx-auto px-4 sm:px-6 lg:px-2">
         {
           dark ? (
             <div className="w-full md:mb-20">
@@ -78,7 +78,7 @@ export default function References() {
           {/* Left fade effect */}
           <div className="absolute top-0 left-0 w-[10%] h-full bg-gradient-to-r from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
           {/* Right fade effect */}
-          <div className="absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
+          <div className="absolute top-0 right-0 w-[10%] h-full bg-gradient-to-l from-[#eff6ff] dark:from-[#18181b] to-transparent z-10" />
           <motion.div
             className="overflow-hidden"
             initial={{ opacity: 0 }}

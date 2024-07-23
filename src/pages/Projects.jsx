@@ -214,33 +214,35 @@ export default function Projects() {
                               alt="thumbnail"
                             />
                           </CardItem>
-                          <CardItem
-                            as="p"
-                            translateZ="60"
-                            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mt-10 flex"
-                          >
-                            {project.builtWith?.map((tech, index) => {
-                              const isLastItem =
-                                index === project.builtWith.length - 1;
-                              return (
-                                <div
-                                  key={index}
-                                  className="relative flex w-[60px] items-center justify-center"
-                                >
-                                  <div className="group flex flex-col w-full items-center justify-center text-center mx-2">
-                                    <LanguagesLogos
-                                      language={tech}
-                                      className="w-full mx-auto transition-transform duration-200 ease-in-out group-hover:scale-110 group-hover:-translate-y-1"
-                                    />
-                                    <span className="absolute bottom-0 inset-x-0 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out text-xs">
-                                      {tech}
-                                    </span>
-                                  </div>
-                                  {!isLastItem && <span>·</span>}
-                                </div>
-                              );
-                            })}
+                          <div className="flex flex-wrap justify-center">
+                            <CardItem
+                              as="p"
+                              translateZ="60"
+                              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mt-10 flex flex-wrap justify-center"
+                            >
+                                {project.builtWith?.map((tech, index) => {
+                                  const isLastItem =
+                                    index === project.builtWith.length - 1;
+                                  return (
+                                    <div
+                                      key={index}
+                                      className="relative flex w-[60px] items-center justify-center"
+                                    >
+                                      <div className="group flex flex-col w-full items-center justify-center text-center mx-2">
+                                        <LanguagesLogos
+                                          language={tech}
+                                          className="w-full mx-auto transition-transform duration-200 ease-in-out group-hover:scale-110 group-hover:-translate-y-1"
+                                        />
+                                        <span className="absolute bottom-0 inset-x-0 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out text-xs">
+                                          {tech}
+                                        </span>
+                                      </div>
+                                      {!isLastItem && <span>·</span>}
+                                    </div>
+                                  );
+                                })}
                           </CardItem>
+                          </div>
                           <div className="flex justify-between items-center mt-5 2xl:mt-10">
                             <CardItem
                               layoutId={`button-${project.id}-${id}`}
@@ -270,55 +272,6 @@ export default function Projects() {
           </div>
         )}
       </AnimatePresence>
-      {/* <AnimatePresence>
-        <div className="lg:hidden grid grid-cols-1 -translate-y-32 md:-translate-y-0">
-          {featuredProjects.map(
-            (project, index) =>
-              index < 2 && (
-                <div className="inter-var flex w-[350px] mx-auto my-10">
-                  <div className="bg-gray-50 relative group/card dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                    <div
-                      translateZ="50"
-                      className="text-xl font-bold text-neutral-600 dark:text-white"
-                    >
-                      {project.title}
-                    </div>
-                    <div translateZ="100" className="w-full mt-4">
-                      <img
-                        src={project.thumbnail}
-                        height="1000"
-                        width="1000"
-                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                        alt="thumbnail"
-                      />
-                    </div>
-                    <div className="flex justify-between items-center mt-6">
-                      <div
-                        layoutId={`button-${1}-${id}`}
-                        translateZ={20}
-                        as="button"
-                        onClick={() => setActiveCard(project)}
-                        className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                      >
-                        Read More →
-                      </div>
-                      <Link to = {project.link}>
-                        <div
-                          translateZ={20}
-                          as={Link}
-                          to={project.link}
-                          className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                        >
-                          {project.live ? "Try Now" : "Watch the Demo"}
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )
-          )}
-        </div>
-      </AnimatePresence> */}
     </div>
   );
 }
