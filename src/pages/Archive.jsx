@@ -2,6 +2,7 @@ import projects from "../assets/projects.json";
 import NavBar from "../components/NavBar";
 import Socials from "../components/Socials";
 import Email from "../components/Email";
+import Footer from "../pages/Footer";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -120,6 +121,7 @@ export default function Archive() {
           cards={[activeCard]}
         />
       )}
+      <Footer />
     </div>
   );
 }
