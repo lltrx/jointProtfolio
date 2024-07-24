@@ -15,7 +15,7 @@ export default function Home() {
                 </div>
             </h2>
             <p className="dark:text-slate-200 text-lg md:w-3/4 font-display">
-                I’m a software engineer with a passion for designing, developing and deploying web (and occasionally mobile) applications. I have just graduated from the University of Glasgow with a BSc (Hons) Software Engineering degree and am excited to put it to use!
+                I’m a software engineer with a passion for designing, developing and deploying web (and occasionally mobile) applications. I have just graduated from the University of Glasgow with a BSc (Hons) Software Engineering degree and I'm excited to put it to use!
             </p>
         </div>
     );

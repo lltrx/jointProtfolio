@@ -195,7 +195,7 @@ export default function Projects() {
                       exit={{ opacity: 0 }}
                     >
                       <CardContainer
-                        className="inter-var w-[350px] 2xl:w-[400px] mx-10"
+                        className="inter-var w-[350px] 2xl:w-[400px] sm:mx-10"
                         layoutId={`card-${project.id}-${id}`}
                       >
                         <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.25] dark:bg-zinc-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">

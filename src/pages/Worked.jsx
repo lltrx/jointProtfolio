@@ -51,7 +51,7 @@ export default function Worked() {
                                 Work Experience
                             </h1>  
                         </LampContainer>
-                        <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-2/3 max-w-[860px]">
+                        <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-5/6 max-w-[860px]">
                             <div className='relative lg:w-1/3'>
                                 <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                     {work.map((job) => (
@@ -203,7 +203,7 @@ export default function Worked() {
                             </AnimatePresence>
                         </div>
                     </div>
-                    <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-2/3 max-w-[860px]">
+                    <div className="hidden lg:flex flex-col lg:flex-row w-5/6 lg:w-5/6 max-w-[860px]">
                             <div className='relative lg:w-1/3'>
                                 <div className='flex lg:flex-col overflow-x-auto text-orange-500 whitespace-nowrap pb-6 lg:pb-0'>
                                     {work.map((job) => (

@@ -35,7 +35,7 @@ export default function About() {
 
 
     return (
-        <div className="flex flex-col w-full items-center md:p-20 space-y-4 h-screen">
+        <div className="flex flex-col w-full items-center mb-48 md:p-20 space-y-4 h-screen">
             <div className="z-10 w-full flex flex-col justify-center items-center">
                 {
                     dark ? (
@@ -69,9 +69,15 @@ export default function About() {
                                     </div>           
                                 </LampContainerSmall> 
                                 <div className="flex flex-col w-5/6 space-y-10 -translate-y-28">
-                                    <p className="mt-8 text-lg text-center text-zinc-800 dark:text-slate-200 font-display">
-                                        I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
-                                    </p> 
+                                    <p className="mt-8 text-sm text-center text-zinc-800 dark:text-slate-200 font-display">
+                                    Hello I’m Nathan 👋
+                                        <br /><br />
+                                        I’m a passionate and aspiring software developer with a keen interest in developing creative and intuitive digital landscapes. I’ve dedicated myself to building a strong foundation in modern web technologies such as JavaScript, TypeScript, React, Django and Next.JS. 
+                                        <br /><br />
+                                        I get a thrill from being challenged and working hard to solve problems using a logical and methodical approach. I am a great listener, with a friendly, approachable and down-to-earth style whilst maintaining professionalism. I’m project-driven and enjoy achieving success working towards goals
+                                        <br />
+                                        <br />
+                                        Currently, I’m focused on building my portfolio with meaningful projects that showcase my abilities, as well as constantly learning new ways to create my ideas. I’m excited about the opportunity to collaborate with others and bring innovative ideas to life in a forward-thinking and determined environment.                                    </p> 
                                     <img src="/profile.jpg" className="w-[200px] hover:scale-150 transition ease-in-out rounded-full mx-auto" />
                                 </div>           
                             </div>
@@ -92,9 +98,15 @@ export default function About() {
                                     ease: "easeInOut",
                                     }}
                                 >
-                                    <p className="text-lg text-center text-zinc-800 dark:text-slate-200 font-display w-1/2">
-                                        I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
-                                    </p> 
+                                    <p className=" text-center text-zinc-800 dark:text-slate-200 font-display w-1/2">
+                                    Hello I’m Nathan 👋
+                                        <br /><br />
+                                        I’m a passionate and aspiring software developer with a keen interest in developing creative and intuitive digital landscapes. I’ve dedicated myself to building a strong foundation in modern web technologies such as JavaScript, TypeScript, React, Django and Next.JS. 
+                                        <br /><br />
+                                        I get a thrill from being challenged and working hard to solve problems using a logical and methodical approach. I am a great listener, with a friendly, approachable and down-to-earth style whilst maintaining professionalism. I’m project-driven and enjoy achieving success working towards goals
+                                        <br />
+                                        <br />
+                                        Currently, I’m focused on building my portfolio with meaningful projects that showcase my abilities, as well as constantly learning new ways to create my ideas. I’m excited about the opportunity to collaborate with others and bring innovative ideas to life in a forward-thinking and determined environment.                                    </p> 
                                     <img src="/profile.jpg" className="w-[200px] hover:scale-150 transition ease-in-out rounded-full mx-auto" />
                                 </div>     
                             </div> 
@@ -104,9 +116,15 @@ export default function About() {
                                         About Me
                                     </h1>   
                                     <div className="flex flex-col space-y-10">
-                                        <p className="mt-8 text-lg text-center text-zinc-800 dark:text-slate-200 font-display">
-                                            I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
-                                        </p> 
+                                        <p className="mt-8 text-sm text-center text-zinc-800 dark:text-slate-200 font-display">
+                                        Hello I’m Nathan 👋
+                                        <br /><br />
+                                        I’m a passionate and aspiring software developer with a keen interest in developing creative and intuitive digital landscapes. I’ve dedicated myself to building a strong foundation in modern web technologies such as JavaScript, TypeScript, React, Django and Next.JS. 
+                                        <br /><br />
+                                        I get a thrill from being challenged and working hard to solve problems using a logical and methodical approach. I am a great listener, with a friendly, approachable and down-to-earth style whilst maintaining professionalism. I’m project-driven and enjoy achieving success working towards goals
+                                        <br />
+                                        <br />
+                                        Currently, I’m focused on building my portfolio with meaningful projects that showcase my abilities, as well as constantly learning new ways to create my ideas. I’m excited about the opportunity to collaborate with others and bring innovative ideas to life in a forward-thinking and determined environment.                                        </p> 
                                         <img src="/profile.jpg" className="w-[200px] hover:scale-150 transition ease-in-out rounded-full mx-auto" />
                                     </div>     
                                 </div>           
