@@ -35,13 +35,16 @@ export default function Archive() {
             <h1 className="hover:underline underline-offset-2">Home</h1>
           </NavLink>
           <h1>{`>`}</h1>
-          <h1 className="text-orange-700 dark:text-orange-700">Projects</h1>
+          <h1 className="text-[#2779e3] dark:text-[#2779e3]">Projects</h1>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h1 className="mt-8 bg-gradient-to-br font-bold from-orange-900 to-orange-500 pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+          <h1 className="mt-8 bg-gradient-to-br font-bold from-[#2779e3] to-[#1a5cb0] pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Project Archive
           </h1>
-          <p className="mb-10 text-zinc-400 text-center max-w-[300px]">A collection of my work from throughout the years! Select a project to learn more.</p>
+          <p className="mb-10 text-zinc-400 text-center max-w-[300px]">
+            A collection of my work from throughout the years! Select a project
+            to learn more.
+          </p>
 
           {/* ## TABLE ROW PADDING IS APPLIED IN APP.CSS FOR ABSTRACTION */}
 
@@ -59,7 +62,7 @@ export default function Archive() {
                 layoutId={`row-${project.id}`}
                 className="text-center"
               >
-                <td className="text-orange-700 dark:text-orange-600 text-lg font-bold">
+                <td className="text-orange-700 dark:text-[#1a5cb0] text-lg font-bold">
                   {project.year}
                 </td>
                 <td className="max-w-[100px] md:max-w-full">
@@ -71,7 +74,9 @@ export default function Archive() {
                     {project.title}
                   </motion.button>
                 </td>
-                <td className="text-zinc-500 hidden xl:table-cell">{project.madeAt}</td>
+                <td className="text-zinc-500 hidden xl:table-cell">
+                  {project.madeAt}
+                </td>
                 <td className="hidden md:flex items-center justify-center text-sm text-zinc-500">
                   {project.builtWith?.map((tech, index) => {
                     const isLastItem = index === project.builtWith.length - 1;
@@ -101,12 +106,12 @@ export default function Archive() {
                         icon={faLink}
                         color={
                           document.documentElement.classList.contains("dark")
-                            ? "#B54400"
-                            : "#C2410C"
+                            ? "#2779e3"
+                            : "#1a5cb0"
                         }
                       />
                     </a>
-                  </ LinkPreview>
+                  </LinkPreview>
                 </td>
               </motion.tr>
             ))}

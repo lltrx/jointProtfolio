@@ -74,7 +74,7 @@ export function ExpandableCard({ active, setActive, cards }) {
               <div className="mt-4 flex justify-between items-center">
                 <motion.button
                   onClick={() => setActive(null)}
-                  className="px-4 py-2 rounded-xl bg-orange-500 text-white text-xs font-bold"
+                  className="px-4 py-2 rounded-xl bg-[#1a5cb0] text-white text-xs font-bold"
                   >
                   Close
                 </motion.button>

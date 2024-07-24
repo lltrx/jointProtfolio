@@ -1,63 +1,35 @@
 [
     {
         "id": 1,
-        "company": "Upstatement",
-        "link": "http://upstatement.com",
-        "role": "Lead Engineer",
-        "location": "Boston, MA",
-        "dates": "May 2015 - June 2016",
+        "company": "GUSS",
+        "link": "https://guss.org.uk/",
+        "role": "Software Engineer",
+        "location": "Glasgow, The United Kingdom",
+        "dates": "November 2023 - July 2024",
         "description": {
             "bullets": [
-                "Lead development on a variety of projects, including a custom CMS for a major university, a web app for a national non-profit, and a website for a major media company.",
-                "Managed a team of developers, including code reviews, sprint planning, and mentoring.",
-                "Developed a custom WordPress theme for a major media company.",
-                "Developed a custom CMS for a major university.",
-                "Developed a web app for a national non-profit."
+                "Actively participated in client meetings to gather requirements, discuss project scope, and provide suggestions",
+                "Efficiently analyzed, understood, and worked with existing codebases to meet client needs",
+                "Developed a custom WordPress theme for a major media company. Identified and resolved bugs and issues in the codebase, both independently and through pair programming",
+                "Developed and implemented new features based on client requirements, collaborating with the team"
             ]
         }
     },
     {
         "id": 2,
-        "company": "HCI Team Project",
-        "link": "http://upstatement.com",
-        "role": "Lead Engineer",
-        "location": "Boston, MA",
-        "dates": "August 2016 - Present",
+        "company": "City Explorer",
+        "link": "https://cityexplorer.live/",
+        "role": "Full-stack intern",
+        "location": "London, The United Kingdom",
+        "dates": "May 2023 - September 2023",
         "description": {
             "bullets": [
-                "Had to put up with Ahmed Badawy",
-                "Consantinos put in no work as per usual so I done all that too",
-                "Alexander Lake in particular just fucked around all day"
-            ]
-        }
-    },
-    {
-        "id": 3,
-        "company": "Another Thing",
-        "link": "http://upstatement.com",
-        "role": "Lead Engineer",
-        "location": "Boston, MA",
-        "dates": "August 2016 - Present",
-        "description": {
-            "bullets": [
-                "Had to put up with Ahmed Badawy",
-                "Consantinos put in no work as per usual so I done all that too",
-                "Alexander Lake in particular just fucked around all day"
-            ]
-        }
-    },
-    {
-        "id": 4,
-        "company": "And Another Thing",
-        "link": "http://upstatement.com",
-        "role": "Lead Engineer",
-        "location": "Boston, MA",
-        "dates": "August 2016 - Present",
-        "description": {
-            "bullets": [
-                "Had to put up with Ahmed Badawy",
-                "Consantinos put in no work as per usual so I done all that too",
-                "Alexander Lake in particular just fucked around all day"
+                "Full-stack development for a live streaming website",
+                "Fixed 20+ issues",
+                "Led a team of interns, assigning tasks and reviewing code",
+                "Deployed and maintained the project on the company's FTP server",
+                "Contributed ideas for new features to enhance the website's functionality",
+                "Worked on both frontend and backend development using Angular and PHP"
             ]
         }
     }

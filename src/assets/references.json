@@ -1,31 +1,27 @@
 [
-    {
-        "quote":
-            "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-        "name": "Charles Dickens",
-        "title": "A Tale of Two Cities"
-    },
-    {
-        "quote":
-            "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        "name": "William Shakespeare",
-        "title": "Hamlet"
-    },
-    {
-        "quote": "All that we see or seem is but a dream within a dream.",
-        "name": "Edgar Allan Poe",
-        "title": "A Dream Within a Dream"
-    },
-    {
-        "quote":
-            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-        "name": "Jane Austen",
-        "title": "Pride and Prejudice"
-    },
-    {
-        "quote":
-            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-        "name": "Herman Melville",
-        "title": "Moby-Dick"
-    }
+  {
+    "quote": "It was a good experience managing the project with him as a developer. He has a strong foundation and is always ahead of his project timelines. Intuitive, understands the tasks quickly, and has a nice approach to gathering client requirements. He is a Quick learner and diligent at work.",
+    "name": "Nihanth Manyam",
+    "title": "Manager at GUSS"
+  },
+  {
+    "quote": "Turki is a highly dedicated team coach and software engineer. I would strongly recommend him as a technology professional. I've taught Turki in the University of Glasgow's software engineering courses and employed him in our Glasgow University Software Service. Turki is highly professional and he always puts the extra miles in, taking his responsibilities extremely seriously even when they were part of a University course.",
+    "name": "Tim Storer",
+    "title": "Senior Lecturer in Software Engineering at University of Glasgow"
+  },
+  {
+    "quote": "On joining GUSS, Turki quickly proved himself as a motivated and enthusiastic team member. He demonstrated strong analytical thinking and problem solving skills and contributed many ideas to client projects. As an excellent communicator with a positive attitude, he consistently supported his team in meeting their targets. On more than one occasion, he stepped in to support projects that needed urgent attention. I recommend Turki as a reliable, hard-working and trustworthy employee.",
+    "name": "Tess Vaughan",
+    "title": "Software Engineer & Manager at GUSS"
+  },
+  {
+    "quote": "I was lucky enough to work with Turki for the 3rd year team project last year, where we made a social-media style webapp.  Turki was engaged and proactive from day one, being a strong voice in the team, but also making sure to take input from everyone else such that we all delivered our best work. In a nutshell, Turki is a clever, hard-working and well-rounded software engineer. I hope you enjoy working with him as much as I did!",
+    "name": "George Yarr",
+    "title": "Team member at Glasgow University 3rd Year Project"
+  },
+  {
+    "quote": "I’ve had the pleasure of working with Turki on various projects, and he has been vital to our success throughout. He has a talent for explaining his intricate and detailed ideas in a simple and understandable manner. Turki has a great team spirit and work ethic, whether working independently on a component of a bigger system or directly collaborating with team members, he always takes great pride in his work. I wholeheartedly endorse Turki for any position looking for a driven, talented and dependable individual.",
+    "name": "Nathan Hutchison",
+    "title": "Student at University of Glasgow"
+  }
 ]

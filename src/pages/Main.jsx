@@ -90,7 +90,7 @@ export default function Main() {
         </motion.div>
       </div>
       {isLoading && (
-        <Loading className="dark:bg-zinc-900 absolute" color={"#b54400"} />
+        <Loading className="dark:bg-zinc-900 absolute" color={"#1a5cb0"} />
       )}
     </div>
   );

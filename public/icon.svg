@@ -3,20 +3,21 @@
         <path 
             id="Hexagon" 
             d="M8.69873 26.1547L50 2.3094L91.3013 26.1547L91.3013 73.8453L50 97.6906L8.69873 73.8453L8.69873 26.1547Z" 
-            stroke="#b54400"
+            stroke="#3b88ed"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="4"
         />
         <path 
             id="Letter" 
-            d="M 25.1 0 L 25.1 35.05 L 22.85 35.05 L 2.25 3.65 L 2.25 35.05 L 0 35.05 L 0 0 L 2.25 0 L 22.85 31.3 L 22.85 0 L 25.1 0 Z" 
-            stroke="#b54400"
+            d="M29.4 9.6L29.4 0L0 0L0 9.6L8.7 9.6L8.7 37.5L20.7 37.5L20.7 9.6L29.4 9.6Z"
+            stroke="#3b88ed"
+            fill="#3b88ed"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="4"
-            transform="translate(38, 32)"
-        />
+            transform="translate(35 31) scale(1.02)"
+            />
     </g>
     <defs>
         <clipPath id="clip0_8_2">

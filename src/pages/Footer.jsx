@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { LinkPreview } from "../components/link-preview";
 
 export default function Footer() {
-  const [color, setColor] = useState("#b54400");
+  const [color, setColor] = useState("#2779e3");
 
   useEffect(() => {
     const updateTheme = () => {
       const isDark = document.documentElement.classList.contains("dark");
-      setColor(isDark ? "#b54400" : "#C2410C");
+      setColor(isDark ? "#2779e3" : "#1a5cb0");
     };
 
     // Initial check
@@ -117,23 +117,21 @@ export default function Footer() {
           />
         </svg>
       </div>
-      <p className="flex md:hidden text-center text-orange-600">
-        <a href="mailto:nathanhutchison02@gmail.com">
-          nathanhutchison02@gmail.com
-        </a>
+      <p className="flex md:hidden text-center text-[#2779e3]">
+        <a href="mailto:turkifaisal.dev@gmail.com">turkifaisal.dev@gmail.com</a>
       </p>
       <div className="text-slate-800 dark:text-slate-200 underline-offset-2">
         <h1 className="underline-offset-2 text-center">
           Designed and Built by
         </h1>
         <LinkPreview url="https://www.linkedin.com/in/nathan-hutchison-400583188">
-          <span className="text-orange-600 hover:underline">
+          <span className="text-[#2779e3] hover:underline">
             Nathan Hutchison
           </span>
         </LinkPreview>
         {" & "}
         <LinkPreview url="https://www.linkedin.com/in/turki-almutairi-7bb768231">
-          <span className="text-orange-600 hover:underline">
+          <span className="text-[#2779e3] hover:underline">
             Turki Almutairi
           </span>
         </LinkPreview>
