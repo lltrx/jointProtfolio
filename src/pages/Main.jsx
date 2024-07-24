@@ -18,9 +18,11 @@ export default function Main() {
     if (!document.documentElement.classList.contains("noAnimation")) {
       // Prevent scrolling when the component mounts
       document.body.style.overflow = "hidden";
+      document.body.style.marginRight = "8px";
 
       // Set a timeout to allow scrolling after 5 seconds
       const timer = setTimeout(() => {
+        document.body.style.marginRight = "0px";
         document.body.style.overflow = "auto";
         setIsLoading(false);
 
@@ -33,7 +35,7 @@ export default function Main() {
         return () => {
           clearTimeout(classTimer);
         };
-      }, 5000); // 5000 milliseconds = 5 seconds
+      }, 4000); // 5000 milliseconds = 5 seconds
 
       // Clear the initial timeout when the component unmounts
       return () => {

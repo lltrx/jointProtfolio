@@ -24,12 +24,12 @@ const letterVariants = {
         opacity: 1,
         transition: {
             pathLength: {
-                delay: 1,
+                delay: 0.5,
                 duration: 2,
                 ease: "easeInOut",
             },
             opacity: {
-                delay: 1,
+                delay: 0.5,
             },
         },
     },
@@ -42,7 +42,7 @@ const loadingVariants = {
     animate: {
         opacity: 0,
         transition: {
-            delay: 4,
+            delay: 3,
             duration: 1,
         },
     },

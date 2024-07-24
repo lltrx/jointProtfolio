@@ -13,17 +13,17 @@ const lineVariants = {
         opacity: 1,
         transition: {
             pathLength: {
-                delay:6,
+                delay:5,
                 duration: 2,
                 ease: "easeInOut",
             },
             pathOffset: {
-                delay: 6,
+                delay: 5,
                 duration: 2,
                 ease: "easeInOut",
             },
             opacity: {
-                delay: 6,
+                delay: 5,
             },
         },
     },
@@ -80,7 +80,7 @@ const Email = () => {
                     </div>
                 ) : (
                     <div>
-                        <motion.p style={{ color: color }} className={`text-center rotate-90 mb-60 tracking-wider hover:scale-105 transition duration-300 ease-in-out`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:8, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
+                        <motion.p style={{ color: color }} className={`text-center rotate-90 mb-60 tracking-wider hover:scale-105 transition duration-300 ease-in-out`} initial={{opacity:0}} animate={{opacity: 1, transition: {delay:7, duration: 2, ease: "easeInOut"}}}><a href="mailto:nathanhutchison02@gmail.com">nathanhutchison02@gmail.com</a></motion.p>
 
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192 1000" xmlSpace="preserve" >
                             <g>

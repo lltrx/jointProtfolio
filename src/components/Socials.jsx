@@ -16,17 +16,17 @@ const lineVariants = {
     opacity: 1,
     transition: {
       pathLength: {
-        delay: 6,
+        delay: 5,
         duration: 2,
         ease: "easeInOut",
       },
       pathOffset: {
-        delay: 6,
+        delay: 5,
         duration: 2,
         ease: "easeInOut",
       },
       opacity: {
-        delay: 6,
+        delay: 5,
       },
     },
   },
@@ -42,12 +42,12 @@ const logoVariants1 = {
     opacity: 1,
     transition: {
       pathLength: {
-        delay: 14,
+        delay: 13,
         duration: 6,
         ease: "easeInOut",
       },
       opacity: {
-        delay: 14,
+        delay: 13,
       },
     },
   },
@@ -63,12 +63,12 @@ const logoVariants2 = {
     opacity: 1,
     transition: {
       pathLength: {
-        delay: 11,
+        delay: 10,
         duration: 3,
         ease: "easeInOut",
       },
       opacity: {
-        delay: 11,
+        delay: 10,
       },
     },
   },
@@ -84,12 +84,12 @@ const logoVariants3 = {
     opacity: 1,
     transition: {
       pathLength: {
-        delay: 8,
+        delay: 7,
         duration: 3,
         ease: "easeInOut",
       },
       opacity: {
-        delay: 8,
+        delay: 7,
       },
     },
   },
