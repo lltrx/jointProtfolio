@@ -132,27 +132,29 @@ const Socials = () => {
       {document.documentElement.classList.contains("noAnimation") ? (
         <div className="flex flex-col space-y-4">
           <LinkPreview url="https://www.instagram.com/turkifaisal0/">
-            <svg
-              className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
-              fill="none"
-              viewBox="0 0 256 256"
-              id="Flat"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"
-                  stroke={color}
-                  strokeWidth={8}
+            <a href="https://www.instagram.com/turkifaisal0/">
+              <svg
+                className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
+                fill="none"
+                viewBox="0 0 256 256"
+                id="Flat"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
-              </g>
-            </svg>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"
+                    stroke={color}
+                    strokeWidth={8}
+                  />
+                </g>
+              </svg>
+            </a>
           </LinkPreview>
           <div className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out">
             <LinkPreview url="https://www.linkedin.com/in/turki-almutairi-7bb768231/">
@@ -240,30 +242,32 @@ const Socials = () => {
       ) : (
         <div className="flex flex-col space-y-4">
           <LinkPreview url="https://www.instagram.com/turkifaisal0/">
-            <svg
-              className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
-              fill="none"
-              viewBox="0 0 256 256"
-              id="Flat"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <g id="SVGRepo_iconCarrier">
-                <motion.path
-                  d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"
-                  stroke={color}
-                  strokeWidth={8}
-                  variants={logoVariants1}
-                  initial="initial"
-                  animate="animate"
+            <a href="https://www.instagram.com/turkifaisal0/">
+              <svg
+                className="w-[45px] h-[50px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
+                fill="none"
+                viewBox="0 0 256 256"
+                id="Flat"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
-              </g>
-            </svg>
+                <g id="SVGRepo_iconCarrier">
+                  <motion.path
+                    d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"
+                    stroke={color}
+                    strokeWidth={8}
+                    variants={logoVariants1}
+                    initial="initial"
+                    animate="animate"
+                  />
+                </g>
+              </svg>
+            </a>
           </LinkPreview>
           <div className="w-[50px] h-[50px] hover:scale-110 transition duration-300 ease-in-out">
             <LinkPreview url="https://www.linkedin.com/in/turki-almutairi-7bb768231/">
