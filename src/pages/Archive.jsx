@@ -46,19 +46,19 @@ export default function Archive() {
 
           {/* ## TABLE ROW PADDING IS APPLIED IN APP.CSS FOR ABSTRACTION */}
 
-          <table className="w-full md:w-4/5 xl:w-4/6 table-auto table-row-spacing">
+          <table className="w-full text-center lg:text-left md:w-4/5 xl:w-4/6 table-auto table-row-spacing">
             <tr className="text-zinc-600">
               <th>Year</th>
-              <th>Title</th>
+              <th className="lg:pl-10">Title</th>
               <th className="hidden xl:table-cell">Made at</th>
-              <th className="hidden md:table-cell">Built with</th>
-              <th>Link</th>
+              <th className="hidden md:table-cell text-center">Built with</th>
+              <th className="text-center">Link</th>
             </tr>
             {projects.map((project) => (
               <motion.tr
                 key={project.id}
                 layoutId={`row-${project.id}`}
-                className="text-center"
+                className=""
               >
                 <td className="text-orange-700 dark:text-orange-600 text-lg font-bold">
                   {project.year}
@@ -67,7 +67,7 @@ export default function Archive() {
                   <motion.button
                     layoutId={`button-${project.id}`}
                     onClick={() => setActiveCard(project)}
-                    className="text-lg text-zinc-900 dark:text-zinc-200 font-bold underline-offset-2 underline"
+                    className="text-lg text-zinc-900 dark:text-zinc-200 font-bold underline-offset-2 underline lg:ml-10"
                   >
                     {project.title}
                   </motion.button>
@@ -95,7 +95,7 @@ export default function Archive() {
                     );
                   })}
                 </td>
-                <td>
+                <td className="text-center">
                   <LinkPreview url={project.link}>
                     <a href={project.link}>
                       <FontAwesomeIcon

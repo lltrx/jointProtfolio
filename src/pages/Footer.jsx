@@ -132,7 +132,7 @@ export default function Footer() {
           nathanhutchison02@gmail.com
         </a>
       </p>
-      <p className="flex text-center text-zinc-600">This website is in beta so if you spot any issues, please don't hesitate drop me an email and let me know!</p>
+      <p className="flex text-center text-zinc-600">This website is in beta. If you spot any issues, please don't hesitate drop me an email and let me know!</p>
       <div className="text-slate-800 dark:text-slate-200 underline-offset-2">
         <h1 className="underline-offset-2 text-center">
           Designed and Built by
