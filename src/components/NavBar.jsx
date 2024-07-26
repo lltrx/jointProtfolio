@@ -57,7 +57,7 @@ export default function NavBar() {
     setLastScrollY(window.scrollY);
   };
   
-  const debounce = (func, wait = 10) => { // Adjusted wait time to 10ms
+  const debounce = (func, wait = 15) => { // Adjusted wait time to 10ms
     let timeout;
     return () => {
       clearTimeout(timeout);
@@ -68,19 +68,24 @@ export default function NavBar() {
   };
   
   useEffect(() => {
-    const handleScroll = debounce(() => {
-      // Apply the behavior based on screen width
-      if (window.innerWidth < 1024 && window.location.pathname === '/') {
-        console.log(window.location.pathname)
-        controlNavbar();
-      } else {
-        // Always visible on larger screens
-        setNavbarStyle('translate-y-0 opacity-100');
-      }
-    });
-    window.addEventListener('scroll', handleScroll);
-  
+    if (window.innerWidth < 1024) {
+      const handleScroll = debounce(() => {
+        // Apply the behavior based on screen width
+        if (window.innerWidth < 1024 && window.location.pathname === '/') {
+          controlNavbar();
+        } else {
+          // Always visible on larger screens
+          setNavbarStyle('translate-y-0 opacity-100');
+        }
+      });
+      window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+
+    }
+    else {
+      // Always visible on smaller screens
+      setNavbarStyle('translate-y-0 opacity-100');
+    }
   }, [lastScrollY]);
   
   return (
