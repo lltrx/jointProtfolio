@@ -59,7 +59,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="h-[1350px] lg:h-[1200px] md:pt-20 w-full mb-28 md:mb-72 lg:mb-0">
+    <div className="h-[1350px] lg:h-[1200px] md:pt-20 w-full mb-28 md:mb-72 lg:mb-0 lg:-mt-[150px] 2xl:-mt-[100px]">
 
     {/* PROJECT HEADING INCLUDING LAMP COMPONENT LOGIC */}
 
@@ -71,9 +71,9 @@ export default function Projects() {
             </h1>
             <NavLink
               to={`/archive`}
-              className={`w-full flex justify-center space-x-1 text-slate-200 animate-bounce-5px`}
+              className={`w-full flex justify-center space-x-1 text-xl text-slate-200 animate-bounce-5px`}
             >
-              <h1 className="hover:underline underline-offset-2">
+              <h1 className="hover:underline underline-offset-4">
                 View the archive here
               </h1>
               <h1>{` >`}</h1>
@@ -87,9 +87,9 @@ export default function Projects() {
             </h1>
             <NavLink
               to={`/archive`}
-              className={`w-full flex justify-center space-x-1 text-slate-200 animate-bounce-5px`}
+              className={`w-full flex justify-center space-x-1 text-xl text-slate-200 animate-bounce-5px`}
             >
-              <h1 className="hover:underline underline-offset-2">
+              <h1 className="hover:underline underline-offset-4">
                 View the archive here
               </h1>
               <h1>{` >`}</h1>
@@ -98,14 +98,14 @@ export default function Projects() {
         </div>
       ) : (
         <div className="mt-64 md:mt-72 lg:mt-44 mb-40 lg:mb-20 xl:mb-20">
-          <h1 className="pt-24 md:pt-8 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
+          <h1 className="pt-24 md:pt-7 font-bold bg-gradient-to-br from-orange-900 to-orange-500 py-4 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
             Projects
           </h1>
           <NavLink
             to={`/archive`}
-            className={`w-full flex justify-center space-x-1 text-zinc-800 dark:text-slate-200 animate-bounce-5px`}
+            className={`w-full flex justify-center space-x-1 text-xl text-zinc-800 dark:text-slate-200 animate-bounce-5px`}
           >
-            <h1 className="hover:underline underline-offset-2">
+            <h1 className="hover:underline underline-offset-4">
               View the archive here
             </h1>
             <h1>{` >`}</h1>
@@ -181,7 +181,7 @@ export default function Projects() {
       </AnimatePresence>
       <AnimatePresence>
         {(
-          <div className="grid grid-cols-1 -translate-y-32 md:-translate-y-0 lg:grid-cols-2 xl:grid-cols-3 lg:w-5/6 mx-auto">
+          <div className="grid grid-cols-1 -translate-y-32 md:-translate-y-20 lg:grid-cols-2 xl:grid-cols-3 lg:w-5/6 mx-auto">
             {featuredProjects.map((project,index) => {
               if (windowWidth < 1280 && index >= 2) {
                 return null; // Do not render the project if index is 2 or more and window width is less than 1440px

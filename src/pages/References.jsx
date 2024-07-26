@@ -37,7 +37,7 @@ export default function References() {
   }, []);
 
   return ( 
-    <div className="pb-12 md:mt-20 w-full">
+    <div className="pb-12 md:mt-20 w-full lg:-mt-[80px] 2xl:-mt-[30px]">
       <div className="mx-auto px-4 sm:px-6 lg:px-2">
         {
           dark ? (

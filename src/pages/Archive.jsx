@@ -36,17 +36,17 @@ export default function Archive() {
             <h1 className="hover:underline underline-offset-2">Home</h1>
           </NavLink>
           <h1>{`>`}</h1>
-          <h1 className="text-orange-700 dark:text-orange-700">Projects</h1>
+          <h1 className="text-orange-700 dark:text-orange-700">Archive</h1>
         </div>
         <div className="w-full flex flex-col items-center">
           <h1 className="mt-8 bg-gradient-to-br font-bold from-orange-900 to-orange-500 pt-4 pb-10 bg-clip-text text-center text-4xl font-display text-transparent md:text-7xl">
-            Project Archive
+            The Archive
           </h1>
-          <p className="mb-10 text-zinc-400 text-center max-w-[300px]">A collection of my work from throughout the years! Select a project to learn more.</p>
+          <p className="mb-10 text-zinc-400 text-center max-w-[300px] lg:max-w-[400px]">A collection of my work from throughout the years! Select a project to learn more.</p>
 
           {/* ## TABLE ROW PADDING IS APPLIED IN APP.CSS FOR ABSTRACTION */}
 
-          <table className="w-full text-center lg:text-left md:w-4/5 xl:w-4/6 table-auto table-row-spacing">
+          <table className="w-full text-center lg:text-left md:w-4/5 2xl:w-4/6 table-auto table-row-spacing">
             <tr className="text-zinc-600">
               <th>Year</th>
               <th className="lg:pl-10">Title</th>

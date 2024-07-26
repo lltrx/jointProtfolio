@@ -18,8 +18,10 @@ export default function Main() {
     if (!document.documentElement.classList.contains("noAnimation")) {
       // Prevent scrolling when the component mounts
       document.body.style.overflow = "hidden";
-      document.body.style.marginRight = "8px";
 
+      if (window.innerWidth > "1024") {
+        document.body.style.marginRight = "8px";
+      }
       // Set a timeout to allow scrolling after 5 seconds
       const timer = setTimeout(() => {
         document.body.style.marginRight = "0px";

@@ -42,7 +42,7 @@ export default function Worked() {
     }, []);
 
     return (
-        <div className="flex flex-col w-full items-center lg:pt-20 lg:p-20 lg:mb-20 lg:mb-48 space-y-4 h-fit overflow-x-hidden">
+        <div className="flex flex-col w-full items-center lg:pt-20 lg:p-20 lg:mb-20 lg:mb-48 space-y-4 h-fit overflow-x-hidden lg:-mt-[150px] 2xl:-mt-[100px]">
             {dark ? (
                 <div className='pt-60 lg:pt-0 w-full'>
                     <div className='flex flex-col items-center w-full'>
@@ -87,7 +87,7 @@ export default function Worked() {
                                             <div className='flex flex-col space-y-4'>
                                                 {selectedJobDetails.description.bullets.map((bullet, index) => (
                                                     <div className='flex space-x-3'>
-                                                        <p className='text-orange-500 text-sm'>⬡ </p>
+                                                        <p className='text-orange-500 text-sm lg:text-base'>⬡ </p>
                                                         <p key={index} className='text-sm lg:text-base'>{bullet}</p>
                                                     </div>
                                                 ))}

@@ -12,6 +12,7 @@ export default {
         shimmer: "shimmer 3s linear infinite",
         scroll:
           "scroll var(--animation-duration) var(--animation-direction) linear infinite",
+          'spin-slow': 'spin 10s linear infinite',
       },
       keyframes: {
         shimmer: {
