@@ -1,4 +1,3 @@
-import projects from "../assets/projects.json";
 import NavBar from "../components/NavBar";
 import Socials from "../components/Socials";
 import Email from "../components/Email";
@@ -14,10 +13,16 @@ import { LinkPreview } from "../components/link-preview";
 
 export default function Archive() {
   const [activeCard, setActiveCard] = useState(null);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     document.documentElement.classList.add("dark");
     document.documentElement.classList.add("noAnimation");
+
+    fetch("http://localhost:8080/projects")
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error("Error fetching projects", error));
   }, []);
 
   return (

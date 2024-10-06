@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useId } from "react";
 import { CardBody, CardContainer, CardItem } from "../components/3d-card";
-import projects from "../assets/projects.json";
+// import projects from "../assets/projects.json";
 import { NavLink, Link } from "react-router-dom";
 import LanguagesLogos from "../assets/languagesLogos";
 import { LampContainer } from "../components/lamp";
@@ -9,6 +9,9 @@ import { ExpandableCard } from "../components/expandable-cards";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projects() {
+
+  const [projects, setProjects] = useState([]);
+
   const featuredProjects = projects
     .filter((project) => project.featured === true)
     .slice(0, 3);
@@ -56,6 +59,13 @@ export default function Projects() {
 
     // Cleanup function to disconnect the observer
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/projects")
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error("Error fetching projects", error));
   }, []);
 
   return (

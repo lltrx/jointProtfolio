@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import work from '../assets/work.json';
+// import work from '../assets/work.json';
 import { LampContainer } from "../components/lamp";
 import { LampContainerSmall } from '../components/lampSmall';
 
 export default function Worked() {
+
+    const [work, setWork] = useState([]);
     const [selectedJob, setSelectedJob] = useState(1);
     const selectedJobDetails = work.find(job => job.id === selectedJob);
+
 
     const variants = {
         hidden: { opacity: 0 },
@@ -40,6 +43,16 @@ export default function Worked() {
         // Cleanup function to disconnect the observer
         return () => observer.disconnect();
     }, []);
+
+
+    useEffect(() => {
+        fetch("http://localhost:8080/work")
+            .then(response => response.json())
+            .then(data => setWork(data))
+            .catch(error => console.log(error));
+    }, []);
+
+    work.sort((a, b) => a.id - b.id);
 
     return (
         <div className="flex flex-col w-full items-center lg:pt-20 lg:p-20 lg:mb-20 lg:mb-48 space-y-4 overflow-x-hidden lg:-mt-[150px] 2xl:-mt-[100px]">
@@ -85,10 +98,10 @@ export default function Worked() {
                                                 <p>{selectedJobDetails.location}</p>
                                             </div>
                                             <div className='flex flex-col space-y-4'>
-                                                {selectedJobDetails.description.bullets.map((bullet, index) => (
+                                                {selectedJobDetails.description.map((description, index) => (
                                                     <div className='flex space-x-3'>
                                                         <p className='text-orange-500 text-sm lg:text-base'>⬡ </p>
-                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
+                                                        <p key={index} className='text-sm lg:text-base'>{description}</p>
                                                     </div>
                                                 ))}
                                             </div>
@@ -138,10 +151,10 @@ export default function Worked() {
                                                 <p>{selectedJobDetails.location}</p>
                                             </div>
                                             <div className='flex flex-col space-y-4'>
-                                                {selectedJobDetails.description.bullets.map((bullet, index) => (
+                                                {selectedJobDetails.description.map((description, index) => (
                                                     <div className='flex space-x-3'>
                                                         <p className='text-orange-500 text-sm'>⬡ </p>
-                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
+                                                        <p key={index} className='text-sm lg:text-base'>{description}</p>
                                                     </div>
                                                 ))}
                                             </div>
@@ -191,10 +204,10 @@ export default function Worked() {
                                             <p>{selectedJobDetails.location}</p>
                                         </div>
                                         <div className='flex flex-col space-y-4'>
-                                            {selectedJobDetails.description.bullets.map((bullet, index) => (
+                                            {selectedJobDetails.description.descriptions.map((description, index) => (
                                                 <div className='flex space-x-3'>
                                                     <p className='text-orange-500 text-sm'>⬡ </p>
-                                                    <p key={index} className='text-sm lg:text-base'>{bullet}</p>
+                                                    <p key={index} className='text-sm lg:text-base'>{description}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -237,10 +250,10 @@ export default function Worked() {
                                                 <p>{selectedJobDetails.location}</p>
                                             </div>
                                             <div className='flex flex-col space-y-4'>
-                                                {selectedJobDetails.description.bullets.map((bullet, index) => (
+                                                {selectedJobDetails.description.map((description, index) => (
                                                     <div className='flex space-x-3'>
                                                         <p className='text-orange-500 text-sm'>⬡ </p>
-                                                        <p key={index} className='text-sm lg:text-base'>{bullet}</p>
+                                                        <p key={index} className='text-sm lg:text-base'>{description}</p>
                                                     </div>
                                                 ))}
                                             </div>

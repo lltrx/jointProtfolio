@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { LampContainer } from "../components/lamp";
 import { LampContainerSmall } from "../components/lampSmall";
-// CHANGED THIS SLIGHTLY SO THE REFERENCES ARE IN A JSON INSTEAD OF DECLARED IN THE FUNCTION - WILL MAKE BUILDING A BACKEND EASIER IF WE NEED IT (I THINK!)
-import references from "../assets/references.json";
+
 
 export default function References() {
+
+  const [references, setReferences] = useState([]);
 
   const [dark, setDark] = useState(true);
 
@@ -34,6 +35,13 @@ export default function References() {
   
       // Cleanup function to disconnect the observer
       return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    fetch('http://localhost:8080/references')
+      .then(response => response.json())
+      .then(data => setReferences(data))
+      .catch(error => console.error(error));
   }, []);
 
   return ( 
